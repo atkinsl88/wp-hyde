@@ -1,0 +1,13 @@
+/* Hero Banner */
+
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  .hero-text {
+    height: auto;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+  }
+}

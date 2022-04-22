@@ -1,0 +1,21 @@
+/* Sandbox Styles */
+
+.sandbox {
+  min-height: 100vh;
+  height: auto;
+  background-color: #000;
+  .sandbox-title {
+    color: #fff;
+  }
+  .sandbox-projects {
+    color: #fff;
+  }
+  .sandbox-content {
+    display: flex;
+    align-items: center;
+    a {
+      margin-right: 1rem;
+      color: #fff;
+    }
+  }
+}

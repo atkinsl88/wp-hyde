@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0
+}
+
+/** Global Variables **/
+@import 'variables.scss';
+
+/** Bootstrap Grid **/
+@import 'bs-grid.scss';
+
+/** Elements Styles **/
+@import 'fonts.scss';
+
+/** Global Components **/
+@import 'global/navigation.scss';
+
+/** Aniamtions **/
+@import 'animations/horizontal-text.scss';
+
+/** Homepage Styles **/
+@import 'homepage/hero_banner.scss';
+@import 'homepage/recent.scss';
+@import 'homepage/sandbox.scss';
