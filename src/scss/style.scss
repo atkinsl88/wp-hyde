@@ -14,6 +14,8 @@
 
 /** Global Components **/
 @import 'global/navigation.scss';
+@import 'global/footer.scss';
+@import 'global/page_hero_banner.scss';
 
 /** Aniamtions **/
 @import 'animations/horizontal-text.scss';
@@ -22,3 +24,9 @@
 @import 'homepage/hero_banner.scss';
 @import 'homepage/recent.scss';
 @import 'homepage/sandbox.scss';
+@import 'homepage/roles.scss';
+
+/** Other Pages Styles **/
+@import 'pages/sandbox.scss';
+@import 'pages/roles.scss';
+@import 'pages/recent.scss';

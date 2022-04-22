@@ -33,6 +33,7 @@
         echo paginate_links();
       ?>
     </div>
+    <a href="http://localhost/wordpress-portfolio/index.php/recent/"><p>Read more</p></a>
   </div>
 </section>
 
@@ -62,6 +63,46 @@
         echo paginate_links();
       ?>
     </div>
+    <a href="http://localhost/wordpress-portfolio/index.php/sandbox/"><p>Read more</p></a>
+  </div>
+</section>
+
+<section class="roles">
+  <div class="container-fluid">
+    <div class="roles-title">
+      <h2>Roles</h2>
+    </div>
+    <?php
+      $roles = get_page_by_title( 'roles' );
+      $roles = apply_filters('the_content', $roles->post_content); 
+      echo $roles_content;
+    ?>
+    <div class="roles-jobs">
+      <?php
+        $rolesOrder = new WP_Query(array(
+          'post_type' => 'role',
+          'order' => 'ASC',
+        ));
+        while($rolesOrder->have_posts()) {
+          $rolesOrder->the_post(); ?>
+          <div class="company_title">
+            <p><?php the_field('company_name') ?></p>
+          </div>
+          <div class="roles-content">
+            <div class="company_info">
+              <p><?php the_field('company_role') ?></p>
+              <p><?php the_field('company_date') ?></p>
+            </div>
+            <div class="company_bio">
+              <p><?php the_content() ?></p>
+              <a href="<?php the_permalink(); ?>"><p>Read more</p></a>
+            </div>
+          </div>
+        <?php }
+        echo paginate_links();
+      ?>
+    </div>
+    <a href="http://localhost/wordpress-portfolio/index.php/roles/"><p>Read more</p></a>
   </div>
 </section>
 

@@ -1,0 +1,17 @@
+/* Hero Banner */
+
+.page-hero {
+  .page-hero-text {
+    height: auto;
+    h1 {
+      font-size: $font-size-h2;
+      font-family: 'PT Serif', serif;
+      text-transform: none;
+    }
+    h2 {
+      font-size: $font-size-h4;
+      font-family: 'PT Serif', serif;
+      text-transform: none;
+    }
+  }
+}

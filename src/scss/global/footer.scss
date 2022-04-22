@@ -1,0 +1,14 @@
+/* Navigation Styles */
+
+.footer {
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .footer-title {
+    p {
+      font-size: $font-size-lg;
+      text-transform: uppercase;
+    }
+  }
+}

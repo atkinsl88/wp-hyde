@@ -1,5 +1,7 @@
 <div class="footer">
-  <p>Hello</p>
+  <div class="footer-title">
+    <p>Hyde</p>
+  </div>
 </div>
 
 <?php wp_footer(); ?>

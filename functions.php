@@ -20,7 +20,10 @@ function recent_post_types()
 {
   register_post_type('recent', array(
     'supports' => array('title', 'editor', 'excerpt'),
+    'has_archive' => true,
     'public' => true,
+    'show_in_rest' => true,
+    'supports' => array('editor'),
     'labels' => array(
       'name' => 'Recent Work',
       'add_new_item' => 'Add New Projects',
@@ -39,7 +42,10 @@ function sandbox_post_types()
 {
   register_post_type('sandbox', array(
     'supports' => array('title', 'editor', 'excerpt'),
+    'has_archive' => true,
     'public' => true,
+    'show_in_rest' => true,
+    'supports' => array('editor'),
     'labels' => array(
       'name' => 'Sandbox',
       'add_new_item' => 'Add New Sandbox',
@@ -58,7 +64,10 @@ function role_post_types()
 {
   register_post_type('role', array(
     'supports' => array('title', 'editor', 'excerpt'),
+    'has_archive' => true,
     'public' => true,
+    'show_in_rest' => true,
+    'supports' => array('editor'),
     'labels' => array(
       'name' => 'Role',
       'add_new_item' => 'Add New Role',
