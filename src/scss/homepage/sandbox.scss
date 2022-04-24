@@ -4,15 +4,23 @@
   min-height: 100vh;
   height: auto;
   background-color: #000;
-  .sandbox-title {
+  padding: 4rem 0;
+  a {
     color: #fff;
   }
-  .sandbox-projects {
+  .sandbox-title {
     color: #fff;
+    padding-bottom: 2rem;
+  }
+  .sandbox-projects {
+    color: #fff !important;
   }
   .sandbox-content {
     display: flex;
     align-items: baseline;
+    h4 {
+      margin-right: 0.5rem;
+    }
     a {
       margin-right: 1rem;
       color: #fff;

@@ -3,13 +3,54 @@
 .recent {
   min-height: 100vh;
   height: auto;
+  padding: 4rem 0;
   .recent-title {
+    padding-bottom: 2rem;
   }
-  .recent-projects {
-  }
-  .recent-content {
+
+  .recent-content-one {
+    display: flex;
+    justify-content: center;
+    margin-left: 2rem;
+    margin-bottom: 4rem;
+    .content-one {
+      z-index: 1;
+    }
     img {
       position: relative;
+      top: -20px;
+      right: 70px;
     }
   }
+
+  .recent-content-two {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 2rem;
+    margin-bottom: 4rem;
+    .content-two {
+      z-index: 1;
+    }
+    img {
+      position: relative;
+      right: 80px;
+    }
+  }
+
+  .recent-content-three {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 3rem;
+    margin-bottom: 4rem;
+    .content-three {
+      z-index: 1;
+    }
+    img {
+      position: relative;
+      right: 80px;
+      height: auto;
+      width: auto;
+    }
+  }
+
 }

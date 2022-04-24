@@ -4,14 +4,42 @@
   height: auto;
   display: flex;
   align-items: center;
-  justify-content: center;
-  .navigation-burger {
-    background-color: royalblue;
-  }
+  justify-content: space-between;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
   .navigation-title {
+    a {
+      text-decoration: none;
+      color: black;
+    }
     p {
       font-size: $font-size-lg;
       text-transform: uppercase;
+    }
+  }
+  .navigation-burger {
+    display: flex;
+    align-items: center;
+    .burger {
+      margin-right: 0.5rem;
+      .line {
+        width: 60px;
+        height: 2px;
+        background-color: black;
+        margin: 6px 0;
+      }
+      &:hover {
+        .line {
+          margin: 3px 0;
+        }
+      }
+    }
+    .title {
+      p {
+        margin-bottom: 0;
+      }
     }
   }
 }

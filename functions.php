@@ -6,6 +6,7 @@ Register SCSS file
 
 function sedia_files() {
   wp_enqueue_style('portfolio_main_styles', get_stylesheet_uri());
+  wp_enqueue_script( 'script', get_template_directory_uri() . '/src/js/menu.js', array ( 'jquery' ), 1.1, true);
   wp_enqueue_style('google-font-style', 'https://fonts.googleapis.com/css2?family=PT+Serif&family=Poppins&display=swap');
 }
 
@@ -23,7 +24,6 @@ function recent_post_types()
     'has_archive' => true,
     'public' => true,
     'show_in_rest' => true,
-    'supports' => array('editor'),
     'labels' => array(
       'name' => 'Recent Work',
       'add_new_item' => 'Add New Projects',
@@ -45,7 +45,6 @@ function sandbox_post_types()
     'has_archive' => true,
     'public' => true,
     'show_in_rest' => true,
-    'supports' => array('editor'),
     'labels' => array(
       'name' => 'Sandbox',
       'add_new_item' => 'Add New Sandbox',
@@ -67,7 +66,6 @@ function role_post_types()
     'has_archive' => true,
     'public' => true,
     'show_in_rest' => true,
-    'supports' => array('editor'),
     'labels' => array(
       'name' => 'Role',
       'add_new_item' => 'Add New Role',

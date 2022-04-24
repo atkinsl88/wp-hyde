@@ -1418,14 +1418,38 @@ a:hover {
   height: auto;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
 }
-.navigation .navigation-burger {
-  background-color: royalblue;
+.navigation .navigation-title a {
+  text-decoration: none;
+  color: black;
 }
 .navigation .navigation-title p {
   font-size: 2.5rem;
   text-transform: uppercase;
+}
+.navigation .navigation-burger {
+  display: flex;
+  align-items: center;
+}
+.navigation .navigation-burger .burger {
+  margin-right: 0.5rem;
+}
+.navigation .navigation-burger .burger .line {
+  width: 60px;
+  height: 2px;
+  background-color: black;
+  margin: 6px 0;
+}
+.navigation .navigation-burger .burger:hover .line {
+  margin: 3px 0;
+}
+.navigation .navigation-burger .title p {
+  margin-bottom: 0;
 }
 
 /* Navigation Styles */
@@ -1467,7 +1491,7 @@ a:hover {
 .marquee span {
   display: inline-block;
   padding-left: 100%;
-  animation: marquee 5s linear infinite;
+  animation: marquee 10s linear infinite;
 }
 
 /* Make it move */
@@ -1479,10 +1503,33 @@ a:hover {
     transform: translate(-100%, 0);
   }
 }
+/** Menu **/
+.mystyle {
+  background-color: #303332;
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-evenly;
+}
+.menu .menu-links h4 {
+  color: #fff;
+}
+.menu .menu-info p {
+  color: #fff;
+}
+
 /** Homepage Styles **/
 /* Hero Banner */
 .hero {
-  height: 100vh;
   display: flex;
   align-items: center;
 }
@@ -1497,9 +1544,52 @@ a:hover {
 .recent {
   min-height: 100vh;
   height: auto;
+  padding: 4rem 0;
 }
-.recent .recent-content img {
+.recent .recent-title {
+  padding-bottom: 2rem;
+}
+.recent .recent-content-one {
+  display: flex;
+  justify-content: center;
+  margin-left: 2rem;
+  margin-bottom: 4rem;
+}
+.recent .recent-content-one .content-one {
+  z-index: 1;
+}
+.recent .recent-content-one img {
   position: relative;
+  top: -20px;
+  right: 70px;
+}
+.recent .recent-content-two {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 2rem;
+  margin-bottom: 4rem;
+}
+.recent .recent-content-two .content-two {
+  z-index: 1;
+}
+.recent .recent-content-two img {
+  position: relative;
+  right: 80px;
+}
+.recent .recent-content-three {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 3rem;
+  margin-bottom: 4rem;
+}
+.recent .recent-content-three .content-three {
+  z-index: 1;
+}
+.recent .recent-content-three img {
+  position: relative;
+  right: 80px;
+  height: auto;
+  width: auto;
 }
 
 /* Sandbox Styles */
@@ -1507,16 +1597,24 @@ a:hover {
   min-height: 100vh;
   height: auto;
   background-color: #000;
+  padding: 4rem 0;
+}
+.sandbox a {
+  color: #fff;
 }
 .sandbox .sandbox-title {
   color: #fff;
+  padding-bottom: 2rem;
 }
 .sandbox .sandbox-projects {
-  color: #fff;
+  color: #fff !important;
 }
 .sandbox .sandbox-content {
   display: flex;
   align-items: baseline;
+}
+.sandbox .sandbox-content h4 {
+  margin-right: 0.5rem;
 }
 .sandbox .sandbox-content a {
   margin-right: 1rem;
@@ -1529,6 +1627,10 @@ a:hover {
   height: auto;
   background-color: #303332;
   color: #fff;
+  padding: 4rem 0;
+}
+.roles .roles-title {
+  padding-bottom: 2rem;
 }
 .roles .roles-content {
   display: flex;
@@ -1541,34 +1643,44 @@ a:hover {
 }
 
 /** Other Pages Styles **/
-.sandbox-main .sandbox-projects-main {
+.sandbox-main .sandbox-projects {
   display: flex;
   align-items: baseline;
 }
-.sandbox-main .sandbox-projects-main a {
+.sandbox-main .sandbox-projects a {
   margin-right: 0.5rem;
 }
 
-.roles-main .roles-projects-main {
+.roles-main .roles-projects {
   display: flex;
   align-items: baseline;
 }
-.roles-main .roles-projects-main a {
+.roles-main .roles-projects a {
   margin-right: 0.5rem;
 }
+.roles-main .roles-projects .roles-content {
+  display: flex;
+  width: 100%;
+}
+.roles-main .roles-projects .roles-content .company_info {
+  width: 50%;
+}
+.roles-main .roles-projects .roles-content .company_bio {
+  width: 50%;
+}
 
-.recent-main .recent-projects-main {
+.recent-main .recent-projects {
   display: flex;
   align-items: baseline;
   border-top: 2px solid #000;
 }
-.recent-main .recent-projects-main:last-child {
+.recent-main .recent-projects:last-child {
   border-bottom: 2px solid #000;
 }
-.recent-main .recent-projects-main h4 {
+.recent-main .recent-projects h4 {
   margin: 0;
 }
-.recent-main .recent-projects-main a {
+.recent-main .recent-projects a {
   margin-right: 0.5rem;
   margin-bottom: 0;
 }

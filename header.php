@@ -9,13 +9,19 @@
 
 <body <?php body_class(); ?>>
 
-  <div class="navigation">
-    <div class="navigation-burger">
-      <div class="line1"></div>
-      <div class="line2"></div>
-      <div class="line3"></div>
+  <nav class="container-fluid">
+    <div class="navigation container">
+      <div class="navigation-title">
+        <a href="http://localhost/wordpress-portfolio/"><p>Hyde</p></a>
+      </div>
+      <div class="navigation-burger">
+        <div class="burger" onclick="myFunction()">
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+        <div class="title">
+          <p>Menu</p>
+        </div>
+      </div>
     </div>
-    <div class="navigation-title">
-      <p>Hyde</p>
-    </div>
-  </div>
+</nav>
