@@ -1,7 +1,9 @@
 .roles-main {
+  min-height: 100vh;
   .roles-projects {
     display: flex;
     align-items: baseline;
+    margin-bottom: 2rem;
     a {
       margin-right: 0.5rem;
     }
@@ -10,6 +12,9 @@
       width: 100%;
       .company_info {
         width: 50%;
+        .role-info {
+          margin-left: 0.5rem;
+        }
       }
       .company_bio {
         width: 50%;

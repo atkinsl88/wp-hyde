@@ -9,7 +9,15 @@
 <section class="page-hero container-fluid">
   <div class="container">
     <div class="page-hero-text">
-      <h1>Sandbox</h1>
+      <h1>Sandbox Development</h1>
+    </div>
+  </div>
+</section>
+
+<section class="container-fluid">
+  <div class="container">
+    <div class="page-content">
+      <?php the_content(); ?>
     </div>
   </div>
 </section>

@@ -1,7 +1,6 @@
 /* Recent Styles */
 
 .recent {
-  min-height: 100vh;
   height: auto;
   padding: 4rem 0;
   .recent-title {
@@ -11,46 +10,68 @@
   .recent-content-one {
     display: flex;
     justify-content: center;
-    margin-left: 2rem;
+    flex-wrap: wrap;
     margin-bottom: 4rem;
     .content-one {
       z-index: 1;
+      a {
+        h4 {
+          margin-bottom: 0;
+        }
+      }
     }
     img {
+      max-height: 267px;
+      max-width: 550px;
       position: relative;
-      top: -20px;
-      right: 70px;
+      right: 40px;
     }
   }
 
   .recent-content-two {
     display: flex;
     justify-content: flex-start;
-    margin-left: 2rem;
+    flex-wrap: wrap;
     margin-bottom: 4rem;
     .content-two {
       z-index: 1;
+      a {
+        h4 {
+          margin-bottom: 0;
+        }
+      }
     }
     img {
+      max-height: 528px;
+      max-width: 568px;
       position: relative;
-      right: 80px;
+      right: 40px;
     }
   }
 
   .recent-content-three {
     display: flex;
     justify-content: flex-end;
-    margin-right: 3rem;
+    flex-wrap: wrap;
     margin-bottom: 4rem;
     .content-three {
       z-index: 1;
+      a {
+        h4 {
+          margin-bottom: 0;
+        }
+      }
     }
     img {
+      max-height: 267px;
+      max-width: 550px;
       position: relative;
-      right: 80px;
-      height: auto;
-      width: auto;
+      right: -5px;
     }
+  }
+
+  a {
+    color: #000;
   }
 
 }

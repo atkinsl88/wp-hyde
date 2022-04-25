@@ -1,7 +1,6 @@
 /* Sandbox Styles */
 
 .roles {
-  min-height: 100vh;
   height: auto;
   background-color: #303332;
   color: #fff;
@@ -11,11 +10,18 @@
   }
   .roles-content {
     display: flex;
+    margin-bottom: 2rem;
     .company_info {
       width: 50%;
+      .role-info {
+        margin-left: 0.5rem;
+      }
     }
     .company_bio {
       width: 50%;
     }
+  }
+  a {
+    color: #fff;
   }
 }

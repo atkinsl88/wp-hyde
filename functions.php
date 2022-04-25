@@ -78,3 +78,24 @@ function role_post_types()
 }
 
 add_action('init', 'role_post_types');
+
+// Custom Post Type: Design
+function design_post_types()
+{
+  register_post_type('design', array(
+    'supports' => array('title', 'editor', 'excerpt'),
+    'has_archive' => true,
+    'public' => true,
+    'show_in_rest' => true,
+    'labels' => array(
+      'name' => 'Design',
+      'add_new_item' => 'Add New Design',
+      'edit_item' => 'Edit Design',
+      'all_items' => 'All Design',
+      'singular_name' => 'Design'
+    ),
+    'menu_icon' => 'dashicons-admin-customizer'
+  ));
+}
+
+add_action('init', 'design_post_types');

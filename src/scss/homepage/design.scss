@@ -1,0 +1,26 @@
+/* Design Styles */
+
+.design {
+  height: auto;
+  background-color: #fff;
+  padding: 4rem 0;
+  a {
+    color: #000;
+  }
+  .design-title {
+    color: #000;
+    padding-bottom: 2rem;
+  }
+  .card-deck {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .card {
+      width: 30%;
+      margin-bottom: 2rem;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

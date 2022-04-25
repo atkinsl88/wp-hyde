@@ -1365,14 +1365,14 @@ html {
     font-size: 1rem;
   }
 }
-h4, h3, h2, h1 {
+.hero h2, h4, h3, h2, h1 {
   margin-top: 0;
   font-weight: normal;
 }
 
 h1 {
   font-family: "Poppins", sans-serif;
-  font-size: 36rem;
+  font-size: 6rem;
   text-transform: uppercase;
 }
 
@@ -1383,11 +1383,13 @@ h2 {
 }
 
 h3 {
+  font-family: "PT Serif", serif;
   font-size: 4rem;
   margin-bottom: 1.25rem;
 }
 
 h4 {
+  font-family: "PT Serif", serif;
   font-size: 2rem;
   margin-bottom: 1.25rem;
 }
@@ -1442,7 +1444,7 @@ a:hover {
 .navigation .navigation-burger .burger .line {
   width: 60px;
   height: 2px;
-  background-color: black;
+  background-color: #000;
   margin: 6px 0;
 }
 .navigation .navigation-burger .burger:hover .line {
@@ -1452,12 +1454,23 @@ a:hover {
   margin-bottom: 0;
 }
 
+.modal .navigation .navigation-title a {
+  color: #fff;
+}
+.modal .navigation .navigation-burger .burger .line {
+  background-color: #fff;
+}
+.modal .navigation .navigation-burger p {
+  color: #fff;
+}
+
 /* Navigation Styles */
 .footer {
   height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 4rem;
 }
 .footer .footer-title p {
   font-size: 2.5rem;
@@ -1467,6 +1480,7 @@ a:hover {
 /* Hero Banner */
 .page-hero .page-hero-text {
   height: auto;
+  margin: 4rem 0;
 }
 .page-hero .page-hero-text h1 {
   font-size: 6rem;
@@ -1491,7 +1505,7 @@ a:hover {
 .marquee span {
   display: inline-block;
   padding-left: 100%;
-  animation: marquee 10s linear infinite;
+  animation: marquee 15s linear infinite;
 }
 
 /* Make it move */
@@ -1505,6 +1519,10 @@ a:hover {
 }
 /** Menu **/
 .mystyle {
+  display: none;
+}
+.mystyle-active {
+  display: block;
   background-color: #303332;
   z-index: 1;
   position: absolute;
@@ -1512,6 +1530,7 @@ a:hover {
   top: 0;
   height: 100%;
   width: 100%;
+  overflow-x: hidden;
 }
 
 .menu {
@@ -1521,6 +1540,10 @@ a:hover {
   justify-content: space-evenly;
 }
 .menu .menu-links h4 {
+  font-size: 4rem;
+  color: #fff;
+}
+.menu .menu-links a {
   color: #fff;
 }
 .menu .menu-info p {
@@ -1531,18 +1554,41 @@ a:hover {
 /* Hero Banner */
 .hero {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 90vh;
 }
-.hero .hero-text {
-  height: auto;
-  width: 100vw;
+.hero h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 6rem;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  line-height: 1.25;
+}
+.hero .hero-text-intro {
+  width: 40%;
+}
+.hero .hero-text-1 {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  height: auto;
+  width: 100%;
+}
+.hero .hero-text-2 {
+  display: flex;
+  justify-content: flex-end;
+  height: auto;
+  width: 100%;
+}
+.hero .hero-text-3 {
+  display: flex;
+  justify-content: flex-start;
+  height: auto;
+  width: 100%;
 }
 
 /* Recent Styles */
 .recent {
-  min-height: 100vh;
   height: auto;
   padding: 4rem 0;
 }
@@ -1552,49 +1598,63 @@ a:hover {
 .recent .recent-content-one {
   display: flex;
   justify-content: center;
-  margin-left: 2rem;
+  flex-wrap: wrap;
   margin-bottom: 4rem;
 }
 .recent .recent-content-one .content-one {
   z-index: 1;
 }
+.recent .recent-content-one .content-one a h4 {
+  margin-bottom: 0;
+}
 .recent .recent-content-one img {
+  max-height: 267px;
+  max-width: 550px;
   position: relative;
-  top: -20px;
-  right: 70px;
+  right: 40px;
 }
 .recent .recent-content-two {
   display: flex;
   justify-content: flex-start;
-  margin-left: 2rem;
+  flex-wrap: wrap;
   margin-bottom: 4rem;
 }
 .recent .recent-content-two .content-two {
   z-index: 1;
 }
+.recent .recent-content-two .content-two a h4 {
+  margin-bottom: 0;
+}
 .recent .recent-content-two img {
+  max-height: 528px;
+  max-width: 568px;
   position: relative;
-  right: 80px;
+  right: 40px;
 }
 .recent .recent-content-three {
   display: flex;
   justify-content: flex-end;
-  margin-right: 3rem;
+  flex-wrap: wrap;
   margin-bottom: 4rem;
 }
 .recent .recent-content-three .content-three {
   z-index: 1;
 }
+.recent .recent-content-three .content-three a h4 {
+  margin-bottom: 0;
+}
 .recent .recent-content-three img {
+  max-height: 267px;
+  max-width: 550px;
   position: relative;
-  right: 80px;
-  height: auto;
-  width: auto;
+  right: -5px;
+}
+.recent a {
+  color: #000;
 }
 
 /* Sandbox Styles */
 .sandbox {
-  min-height: 100vh;
   height: auto;
   background-color: #000;
   padding: 4rem 0;
@@ -1614,16 +1674,15 @@ a:hover {
   align-items: baseline;
 }
 .sandbox .sandbox-content h4 {
-  margin-right: 0.5rem;
+  margin-right: 0.25rem;
 }
 .sandbox .sandbox-content a {
-  margin-right: 1rem;
+  margin-right: 0.25rem;
   color: #fff;
 }
 
 /* Sandbox Styles */
 .roles {
-  min-height: 100vh;
   height: auto;
   background-color: #303332;
   color: #fff;
@@ -1634,26 +1693,67 @@ a:hover {
 }
 .roles .roles-content {
   display: flex;
+  margin-bottom: 2rem;
 }
 .roles .roles-content .company_info {
   width: 50%;
 }
+.roles .roles-content .company_info .role-info {
+  margin-left: 0.5rem;
+}
 .roles .roles-content .company_bio {
   width: 50%;
 }
+.roles a {
+  color: #fff;
+}
+
+/* Design Styles */
+.design {
+  height: auto;
+  background-color: #fff;
+  padding: 4rem 0;
+}
+.design a {
+  color: #000;
+}
+.design .design-title {
+  color: #000;
+  padding-bottom: 2rem;
+}
+.design .card-deck {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.design .card-deck .card {
+  width: 30%;
+  margin-bottom: 2rem;
+}
+.design .card-deck .card img {
+  width: 100%;
+}
 
 /** Other Pages Styles **/
+.sandbox-main {
+  min-height: 100vh;
+}
 .sandbox-main .sandbox-projects {
   display: flex;
   align-items: baseline;
 }
 .sandbox-main .sandbox-projects a {
+  color: #000;
   margin-right: 0.5rem;
 }
 
+.roles-main {
+  min-height: 100vh;
+}
 .roles-main .roles-projects {
   display: flex;
   align-items: baseline;
+  margin-bottom: 2rem;
 }
 .roles-main .roles-projects a {
   margin-right: 0.5rem;
@@ -1665,22 +1765,80 @@ a:hover {
 .roles-main .roles-projects .roles-content .company_info {
   width: 50%;
 }
+.roles-main .roles-projects .roles-content .company_info .role-info {
+  margin-left: 0.5rem;
+}
 .roles-main .roles-projects .roles-content .company_bio {
   width: 50%;
 }
 
+.recent-main {
+  min-height: 100vh;
+}
 .recent-main .recent-projects {
   display: flex;
   align-items: baseline;
   border-top: 2px solid #000;
+  padding: 1rem 0;
 }
 .recent-main .recent-projects:last-child {
   border-bottom: 2px solid #000;
 }
+.recent-main .recent-projects a {
+  color: #000;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
 .recent-main .recent-projects h4 {
+  font-family: "Poppins", sans-serif;
   margin: 0;
+  text-transform: uppercase;
 }
 .recent-main .recent-projects a {
   margin-right: 0.5rem;
   margin-bottom: 0;
+}
+.recent-main .recent-projects span {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+.recent-main .recent-projects:nth-child(1) span {
+  margin-right: 9rem;
+}
+.recent-main .recent-projects:nth-child(2) span {
+  margin-left: 14rem;
+}
+.recent-main .recent-projects:nth-child(3) span {
+  margin-left: 2rem;
+}
+.recent-main .recent-projects:nth-child(4) span {
+  margin-right: 16rem;
+}
+.recent-main .recent-projects:nth-child(5) span {
+  margin-left: 12rem;
+}
+
+.design-main {
+  min-height: 100vh;
+}
+.design-main .card-deck {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.design-main .card-deck .card {
+  width: 30%;
+  margin-bottom: 2rem;
+}
+.design-main .card-deck .card img {
+  width: 100%;
+}
+.design-main a {
+  color: #000;
+  margin-right: 0.5rem;
+}
+
+.page-content {
+  margin-bottom: 4rem;
 }

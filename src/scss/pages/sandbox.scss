@@ -1,8 +1,10 @@
 .sandbox-main {
+  min-height: 100vh;
   .sandbox-projects {
     display: flex;
     align-items: baseline;
     a {
+      color: #000;
       margin-right: 0.5rem;
     }
   }

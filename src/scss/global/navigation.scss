@@ -27,7 +27,7 @@
       .line {
         width: 60px;
         height: 2px;
-        background-color: black;
+        background-color: #000;
         margin: 6px 0;
       }
       &:hover {
@@ -39,6 +39,26 @@
     .title {
       p {
         margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.modal {
+  .navigation {
+    .navigation-title {
+      a {
+        color: #fff;
+      }
+    }
+    .navigation-burger {
+      .burger {
+        .line {
+          background-color: #fff;
+        }
+      }
+      p {
+        color: #fff;
       }
     }
   }

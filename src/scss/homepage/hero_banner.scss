@@ -2,11 +2,36 @@
 
 .hero {
   display: flex;
-  align-items: center;
-  .hero-text {
-    height: auto;
-    width: 100vw;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 90vh;
+  h2 {
+    @extend %heading;
+    font-family: 'Poppins', sans-serif;
+    font-size: $font-size-h2;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    line-height: 1.25;
+  }
+  .hero-text-intro {
+    width: 40%;
+  }
+  .hero-text-1 {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    height: auto;
+    width: 100%;
+  }
+  .hero-text-2 {
+    display: flex;
+    justify-content: flex-end;
+    height: auto;
+    width: 100%;
+  }
+  .hero-text-3 {
+    display: flex;
+    justify-content: flex-start;
+    height: auto;
+    width: 100%;
   }
 }
