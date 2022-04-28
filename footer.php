@@ -27,7 +27,7 @@
         <div class="menu-links">
           <a href="http://localhost/wordpress-portfolio/index.php/"><h4>Home</h4></a>
           <a href="http://localhost/wordpress-portfolio/index.php/recent/"><h4>Recent Work</h4></a>
-          <a href="http://localhost/wordpress-portfolio/index.php/sandbox/"><h4>Sandbox Development</h4></a>
+          <a href="http://localhost/wordpress-portfolio/index.php/sandbox/"><h4>Sandbox</h4></a>
           <a href="http://localhost/wordpress-portfolio/index.php/design/"><h4>Design</h4></a>
           <a href="http://localhost/wordpress-portfolio/index.php/roles/"><h4>Roles</h4></a>
         </div>

@@ -1,12 +1,18 @@
 /* Recent Styles */
 
 .recent {
+  min-height: 100vh;
   height: auto;
   padding: 4rem 0;
+  a {
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
   .recent-title {
     padding-bottom: 2rem;
   }
-
   .recent-content-one {
     display: flex;
     justify-content: center;
@@ -27,7 +33,6 @@
       right: 40px;
     }
   }
-
   .recent-content-two {
     display: flex;
     justify-content: flex-start;
@@ -48,7 +53,6 @@
       right: 40px;
     }
   }
-
   .recent-content-three {
     display: flex;
     justify-content: flex-end;
@@ -69,9 +73,7 @@
       right: -5px;
     }
   }
-
   a {
     color: #000;
   }
-
 }

@@ -2,8 +2,11 @@
 
 .page-hero {
   .page-hero-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
     height: auto;
-    margin: 4rem 0;
+    margin: 4rem 0 3rem 0;
     h1 {
       font-size: $font-size-h2;
       font-family: 'PT Serif', serif;
@@ -13,6 +16,13 @@
       font-size: $font-size-h4;
       font-family: 'PT Serif', serif;
       text-transform: none;
+    }
+  }
+  .dynamic {
+    display: flex;
+    a {
+      color: #000;
+      margin-right: 0.5rem;
     }
   }
 }

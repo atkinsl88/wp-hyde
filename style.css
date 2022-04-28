@@ -1365,26 +1365,26 @@ html {
     font-size: 1rem;
   }
 }
-.hero h2, h4, h3, h2, h1 {
+.hero h2, h5, h4, h3, h2, h1 {
   margin-top: 0;
   font-weight: normal;
 }
 
 h1 {
   font-family: "Poppins", sans-serif;
-  font-size: 6rem;
+  font-size: 5rem;
   text-transform: uppercase;
 }
 
 h2 {
   font-family: "PT Serif", serif;
-  font-size: 6rem;
+  font-size: 5rem;
   margin-bottom: 1.25rem;
 }
 
 h3 {
   font-family: "PT Serif", serif;
-  font-size: 4rem;
+  font-size: 3rem;
   margin-bottom: 1.25rem;
 }
 
@@ -1394,24 +1394,64 @@ h4 {
   margin-bottom: 1.25rem;
 }
 
+h5 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
 p {
   font-family: "Poppins", sans-serif;
   font-size: 1rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 a {
-  font-family: "PT Serif", serif;
-  font-size: 1rem;
-  margin-bottom: 0.5rem;
-  text-decoration: none;
-}
-
-a:hover {
-  font-family: "PT Serif", serif;
+  font-family: "Poppins", sans-serif;
   font-size: 1rem;
   margin-bottom: 0.5rem;
   text-decoration: underline;
+  color: #000;
+}
+
+a:hover {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  text-decoration: underline;
+  color: #f4ca75;
+}
+
+ul {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  margin-left: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+li {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  margin-left: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+img {
+  box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+button {
+  background-color: #f4ca75;
+  border: 1px solid #f4ca75;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  padding: 0.5rem 2rem;
+  border-radius: 20px;
+}
+button:hover {
+  background-color: #000;
+  border: 1px solid #000;
+  color: #fff;
 }
 
 /** Global Components **/
@@ -1479,11 +1519,14 @@ a:hover {
 
 /* Hero Banner */
 .page-hero .page-hero-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
   height: auto;
-  margin: 4rem 0;
+  margin: 4rem 0 3rem 0;
 }
 .page-hero .page-hero-text h1 {
-  font-size: 6rem;
+  font-size: 5rem;
   font-family: "PT Serif", serif;
   text-transform: none;
 }
@@ -1491,6 +1534,13 @@ a:hover {
   font-size: 2rem;
   font-family: "PT Serif", serif;
   text-transform: none;
+}
+.page-hero .dynamic {
+  display: flex;
+}
+.page-hero .dynamic a {
+  color: #000;
+  margin-right: 0.5rem;
 }
 
 /** Aniamtions **/
@@ -1544,7 +1594,11 @@ a:hover {
   color: #fff;
 }
 .menu .menu-links a {
+  text-decoration: none;
   color: #fff;
+}
+.menu .menu-links a:hover {
+  text-decoration: underline;
 }
 .menu .menu-info p {
   color: #fff;
@@ -1560,7 +1614,7 @@ a:hover {
 }
 .hero h2 {
   font-family: "Poppins", sans-serif;
-  font-size: 6rem;
+  font-size: 5rem;
   text-transform: uppercase;
   margin-bottom: 0;
   line-height: 1.25;
@@ -1589,8 +1643,15 @@ a:hover {
 
 /* Recent Styles */
 .recent {
+  min-height: 100vh;
   height: auto;
   padding: 4rem 0;
+}
+.recent a {
+  text-decoration: none;
+}
+.recent a:hover {
+  text-decoration: underline;
 }
 .recent .recent-title {
   padding-bottom: 2rem;
@@ -1655,12 +1716,17 @@ a:hover {
 
 /* Sandbox Styles */
 .sandbox {
+  min-height: 100vh;
   height: auto;
   background-color: #000;
   padding: 4rem 0;
 }
 .sandbox a {
+  text-decoration: none;
   color: #fff;
+}
+.sandbox a:hover {
+  text-decoration: underline;
 }
 .sandbox .sandbox-title {
   color: #fff;
@@ -1683,10 +1749,17 @@ a:hover {
 
 /* Sandbox Styles */
 .roles {
+  min-height: 100vh;
   height: auto;
   background-color: #303332;
   color: #fff;
   padding: 4rem 0;
+}
+.roles a {
+  text-decoration: none;
+}
+.roles a:hover {
+  text-decoration: underline;
 }
 .roles .roles-title {
   padding-bottom: 2rem;
@@ -1710,12 +1783,17 @@ a:hover {
 
 /* Design Styles */
 .design {
+  min-height: 100vh;
   height: auto;
   background-color: #fff;
   padding: 4rem 0;
 }
 .design a {
+  text-decoration: none;
   color: #000;
+}
+.design a:hover {
+  text-decoration: underline;
 }
 .design .design-title {
   color: #000;
@@ -1733,6 +1811,10 @@ a:hover {
 .design .card-deck .card img {
   width: 100%;
 }
+.design .card-deck .card h4 {
+  margin-bottom: 0;
+  margin-top: 1.25rem;
+}
 
 /** Other Pages Styles **/
 .sandbox-main {
@@ -1743,8 +1825,12 @@ a:hover {
   align-items: baseline;
 }
 .sandbox-main .sandbox-projects a {
+  text-decoration: none;
   color: #000;
   margin-right: 0.5rem;
+}
+.sandbox-main .sandbox-projects a:hover {
+  text-decoration: underline;
 }
 
 .roles-main {
@@ -1753,7 +1839,7 @@ a:hover {
 .roles-main .roles-projects {
   display: flex;
   align-items: baseline;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 .roles-main .roles-projects a {
   margin-right: 0.5rem;
@@ -1788,15 +1874,16 @@ a:hover {
   color: #000;
   text-decoration: none;
   font-family: "Poppins", sans-serif;
+  margin-right: 0.5rem;
+  margin-bottom: 0;
+}
+.recent-main .recent-projects a:hover {
+  text-decoration: underline;
 }
 .recent-main .recent-projects h4 {
   font-family: "Poppins", sans-serif;
   margin: 0;
   text-transform: uppercase;
-}
-.recent-main .recent-projects a {
-  margin-right: 0.5rem;
-  margin-bottom: 0;
 }
 .recent-main .recent-projects span {
   display: flex;
@@ -1834,9 +1921,17 @@ a:hover {
 .design-main .card-deck .card img {
   width: 100%;
 }
+.design-main .card-deck .card h4 {
+  margin-bottom: -0.75rem;
+  margin-top: 1.25rem;
+}
 .design-main a {
+  text-decoration: none;
   color: #000;
   margin-right: 0.5rem;
+}
+.design-main a:hover {
+  text-decoration: underline;
 }
 
 .page-content {

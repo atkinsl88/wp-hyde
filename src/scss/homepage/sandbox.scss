@@ -1,11 +1,16 @@
 /* Sandbox Styles */
 
 .sandbox {
+  min-height: 100vh;
   height: auto;
   background-color: #000;
   padding: 4rem 0;
   a {
+    text-decoration: none;
     color: #fff;
+    &:hover {
+      text-decoration: underline;
+    }
   }
   .sandbox-title {
     color: #fff;

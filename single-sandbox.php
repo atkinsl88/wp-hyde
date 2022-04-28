@@ -3,16 +3,18 @@
 <section class="page-hero container-fluid">
   <div class="container">
     <div class="page-hero-text">
-      <h2><?php the_title(); ?></h2>
+      <h1><?php the_title(); ?></h1>
+      <div class="dynamic">
+        <a href="<?php the_field('sandbox_url') ?>" target=”_blank”><button>View Site</button></a>
+        <a href="<?php the_field('sandbox_repo') ?>" target=”_blank”><button>View Repo</button></a>
+      </div>
     </div>
   </div>
 </section>
 
 <section class="container-fluid">
   <div class="container">
-    <p><?php the_content() ?></p>
-    <a href="<?php the_field('sandbox_url') ?>" target=”_blank”><p>View Site</p></a>
-    <a href="<?php the_field('sandbox_repo') ?>" target=”_blank”><p>View Repo</p></a>
+    <?php the_content() ?>
   </div>
 </section>
 

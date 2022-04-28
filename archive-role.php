@@ -52,24 +52,11 @@
   </div>
 </section>
 
-<section class="page-hero container-fluid">
+<section class="container-fluid">
   <div class="container">
-    <div class="page-hero-text">
-      <h1>Education</h1>
-    </div>
-  </div>
-</section>
-
-<section class="education-main container-fluid">
-  <div class="container">
-    <div class="education-projects">
-      <div class="educatio -content">
-        <div class="company_info">
-          <h4>Oxford Brookes University, English, 2:1</h4>
-          <h4>General Assembly, Software Engineering Immersive</h4>
-        </div>
-      </div>
-    </div>
+    <h3>Education & Courses</h3>
+    <p>Oxford Brookes University, English, 2:1 (2009 - 2011)</p>
+    <p>General Assembly, Software Engineering Immersive (2020)</p>
   </div>
 </section>
 

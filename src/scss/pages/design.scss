@@ -10,10 +10,18 @@
       img {
         width: 100%;
       }
+      h4 {
+        margin-bottom: -0.75rem;
+        margin-top: 1.25rem;
+      }
     }
   }
   a {
+    text-decoration: none;
     color: #000;
     margin-right: 0.5rem;
- }
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }

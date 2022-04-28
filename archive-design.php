@@ -30,14 +30,15 @@
     $designPage = new WP_Query(array(
       'posts_per_page' => 13,
       'post_type' => 'design',
+      'order' => 'DEC',
     ));
     while($designPage->have_posts()) {
       $designPage->the_post(); ?>
         <div class="card">
           <img class="card-img-top" src="<?php the_field('design_image') ?>" alt="Card image cap">
           <div class="card-body">
-            <h4 class="card-title"><?php the_title(); ?></h4>
-            <p class="card-text"><?php the_content(); ?></p>
+            <a href="<?php the_field('design_url') ?>" target=”_blank”><h4><?php the_title(); ?></h4></a>
+            <?php the_content(); ?>
           </div>
         </div>
     <?php }

@@ -1,10 +1,17 @@
 /* Sandbox Styles */
 
 .roles {
+  min-height: 100vh;
   height: auto;
   background-color: #303332;
   color: #fff;
   padding: 4rem 0;
+  a {
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
   .roles-title {
     padding-bottom: 2rem;
   }

@@ -3,10 +3,10 @@
 <section class="hero container-fluid">
   <div class="container">
     <div class="hero-text-intro">
-      <p>Ambitious digital creative.</p>
+      <p>Digital creative.</p>
     </div>
     <div class="hero-text-1">
-      <h2>Software Development</h2>
+      <h2>- Software Development</h2>
     </div>
     <div class="hero-text-2">
       <h2>Digital Design</h2>
@@ -49,7 +49,7 @@
         $recentOrder2 = new WP_Query(array(
           'post_type' => 'recent',
           'posts_per_page' => 1,
-          'name' => 'zeldas-quest'
+          'name' => 'dkl'
         ));
         while($recentOrder2->have_posts()) {
           $recentOrder2->the_post(); ?>
@@ -69,7 +69,7 @@
         $recentOrder3 = new WP_Query(array(
           'post_type' => 'recent',
           'posts_per_page' => 1,
-          'name' => 'digilia'
+          'name' => 'moses-motorcycles'
         ));
         while($recentOrder3->have_posts()) {
           $recentOrder3->the_post(); ?>
@@ -105,7 +105,7 @@
         while($sandboxOrder->have_posts()) {
           $sandboxOrder->the_post(); ?>
           <div class="sandbox-content">
-            <a href="<?php the_permalink(); ?>"><h4><?php the_title(); ?></h4></a>
+            <a href="<?php the_field('sandbox_url') ?>" target=”_blank”><h4><?php the_title(); ?></h4></a>
             <p><?php the_field('sandbox_categories') ?></p>
           </div>
         <?php }
@@ -128,7 +128,7 @@
         $designOrder = new WP_Query(array(
           'post_type' => 'design',
           'posts_per_page' => 3,
-          'order' => 'ASC',
+          'order' => 'DEC',
         ));
         while($designOrder->have_posts()) {
           $designOrder->the_post(); ?>
@@ -136,7 +136,7 @@
               <img class="card-img-top" src="<?php the_field('design_image') ?>" alt="Card image cap">
               <div class="card-body">
                 <a href="<?php the_field('design_url') ?>" target=”_blank”><h4><?php the_title(); ?></h4></a>
-                <p class="card-text"><?php the_content(); ?></p>
+                <?php the_content(); ?>
               </div>
             </div>
         <?php }
@@ -158,7 +158,7 @@
       <?php
         $rolesOrder = new WP_Query(array(
           'post_type' => 'role',
-          'posts_per_page' => 3,
+          'posts_per_page' => 4,
           'order' => 'ASC',
         ));
         while($rolesOrder->have_posts()) {
