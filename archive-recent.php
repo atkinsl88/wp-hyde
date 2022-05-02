@@ -8,8 +8,8 @@
 
 <section class="page-hero container-fluid">
   <div class="container">
-    <div class="page-hero-text">
-      <h1>Recent Work</h1>
+    <div class="page-hero-text fade-in">
+      <h1>Recent</h1>
     </div>
   </div>
 </section>
@@ -22,23 +22,33 @@
   </div>
 </section>
 
-<section class="recent-main">
-  <?php
+<section class="sandbox container-fluid">
+  <div class="sandbox-projects">
+    <?php
     $sandboxPage = new WP_Query(array(
-      'posts_per_page' => 13,
+      // 'posts_per_page' => 6,
       'post_type' => 'recent',
     ));
     while($sandboxPage->have_posts()) {
       $sandboxPage->the_post(); ?>
-        <div class="recent-projects">
+        <div class="sandbox-project container-fluid">
           <div class="container">
-            <a href="<?php the_permalink(); ?>"><h4><?php the_title(); ?></h4></a>
-            <a href="<?php the_permalink(); ?>"><p><?php the_field('recent_description') ?></p></a>
+            <div class="project-info">
+              <div class="project-info-bio">
+                <h3><?php the_title(); ?></h3>
+                <p><?php the_field('recent_description') ?></p>
+                <img src="<?php the_field('recent_image') ?>" alt="<?php the_title(); ?>">
+              </div>
+              <div class="project-info-links">
+                <a href="<?php the_permalink(); ?>"><button class="btn-secondary">Read more</button></a>
+              </div>
+            </div>
           </div>
         </div>
     <?php }
     echo paginate_links();
     ?>
+  </div>
 </section>
 
 <?php get_footer(); ?>

@@ -3,8 +3,6 @@
 .roles {
   min-height: 100vh;
   height: auto;
-  background-color: #303332;
-  color: #fff;
   padding: 4rem 0;
   a {
     text-decoration: none;
@@ -19,16 +17,16 @@
     display: flex;
     margin-bottom: 2rem;
     .company_info {
-      width: 50%;
+      width: 40%;
       .role-info {
         margin-left: 0.5rem;
+        p {
+          margin-bottom: 0.25rem;
+        }
       }
     }
     .company_bio {
-      width: 50%;
+      width: 40%;
     }
-  }
-  a {
-    color: #fff;
   }
 }

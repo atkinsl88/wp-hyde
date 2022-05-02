@@ -8,7 +8,7 @@
 
 <section class="page-hero container-fluid">
   <div class="container">
-    <div class="page-hero-text">
+    <div class="page-hero-text fade-in">
       <h1>Sandbox</h1>
     </div>
   </div>
@@ -22,23 +22,32 @@
   </div>
 </section>
 
-<section class="sandbox-main container-fluid">
-  <div class="container">
+<section class="sandbox container-fluid">
+  <div class="sandbox-projects">
     <?php
-      $sandboxPage = new WP_Query(array(
-        'posts_per_page' => 13,
-        'post_type' => 'sandbox',
-        'order' => 'ASC',
-      ));
-      while($sandboxPage->have_posts()) {
-        $sandboxPage->the_post(); ?>
-          <div class="sandbox-projects">
-            <a href="<?php the_field('sandbox_url') ?>" target=”_blank”><h4><?php the_title(); ?></h4></a>
-            <p><?php the_field('sandbox_categories') ?></p>
+    $sandboxPage = new WP_Query(array(
+      // 'posts_per_page' => 6,
+      'post_type' => 'sandbox',
+    ));
+    while($sandboxPage->have_posts()) {
+      $sandboxPage->the_post(); ?>
+        <div class="sandbox-project container-fluid">
+          <div class="container">
+            <div class="project-info">
+              <div class="project-info-bio">
+                <h3><?php the_title(); ?></h3>
+                <p><?php the_field('sandbox_categories') ?></p>
+                <img src="<?php the_field('sandbox_image') ?>" alt="<?php the_title(); ?>">
+              </div>
+              <div class="project-info-links">
+                <a href="<?php the_permalink(); ?>"><button class="btn-secondary">Read more</button></a>
+              </div>
+            </div>
           </div>
-     <?php }
-     echo paginate_links();
-     ?>
+        </div>
+    <?php }
+    echo paginate_links();
+    ?>
   </div>
 </section>
 

@@ -2,17 +2,21 @@
 
 <section class="hero container-fluid">
   <div class="container">
-    <div class="hero-text-intro">
-      <p>Digital creative.</p>
+    <div class="gradient-shape">
     </div>
-    <div class="hero-text-1">
-      <h2>- Software Development</h2>
-    </div>
-    <div class="hero-text-2">
-      <h2>Digital Design</h2>
-    </div>
-    <div class="hero-text-3">
-      <h2>& Project Delivery</h2>
+    <div class="hero-content">
+      <div class="hero-text-intro">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin convallis nisi quis volutpat efficitur. In ac dui congue, vehicula nisl et, dignissim justo.</p>
+      </div>
+      <div class="hero-text-1 fade-in">
+        <h1>Software Development</h1>
+      </div>
+      <div class="hero-text-2 fade-in">
+        <h1>Digital Design</h1>
+      </div>
+      <div class="hero-text-3 fade-in">
+        <h1>& Project Delivery</h1>
+      </div>
     </div>
   </div>
 </section>
@@ -20,7 +24,8 @@
 <section class="recent container-fluid">
   <div class="container">
     <div class="recent-title">
-      <h3>Recent</h3>
+      <h2>Recent</h2>
+      <a href="http://localhost/wordpress-portfolio/index.php/recent/"><button class="btn-primary">View all</button></a>
     </div>
     <div class="recent-projects">
 
@@ -35,8 +40,9 @@
           $recentOrder1->the_post(); ?>
           <div class="recent-content-one">
             <div class="content-one">
-              <a href="<?php the_permalink(); ?>"><h4><?php the_title(); ?></h4></a>
+              <h3><?php the_title(); ?></h3>
               <p><?php the_field('recent_description') ?></p>
+              <a href="<?php the_permalink(); ?>"><button class="btn-secondary">Read more</button></a>
             </div>
             <img src="<?php the_field('recent_image') ?>" alt="<?php the_title(); ?>">
           </div>
@@ -54,11 +60,12 @@
         while($recentOrder2->have_posts()) {
           $recentOrder2->the_post(); ?>
           <div class="recent-content-two">
-            <div class="content-two">
-              <a href="<?php the_permalink(); ?>"><h4><?php the_title(); ?></h4></a>
-              <p><?php the_field('recent_description') ?></p>
-            </div>
             <img src="<?php the_field('recent_image') ?>" alt="<?php the_title(); ?>">
+            <div class="content-two">
+              <h3><?php the_title(); ?></h3>
+              <p><?php the_field('recent_description') ?></p>
+              <a href="<?php the_permalink(); ?>"><button class="btn-secondary">Read more</button></a>
+            </div>
           </div>
         <?php }
         echo paginate_links();
@@ -75,8 +82,9 @@
           $recentOrder3->the_post(); ?>
           <div class="recent-content-three">
             <div class="content-three">
-              <a href="<?php the_permalink(); ?>"><h4><?php the_title(); ?></h4></a>
+              <h3><?php the_title(); ?></h3>
               <p><?php the_field('recent_description') ?></p>
+              <a href="<?php the_permalink(); ?>"><button class="btn-secondary">Read more</button></a>
             </div>
             <img src="<?php the_field('recent_image') ?>" alt="<?php the_title(); ?>">
           </div>
@@ -85,42 +93,51 @@
       ?>
 
     </div>
-    <a href="http://localhost/wordpress-portfolio/index.php/recent/"><p>View all recent projects</p></a>
   </div>
 </section>
 
 <section class="sandbox container-fluid">
-  <div class="container">
-    <div class="sandbox-title">
-      <h3>Sandbox Development</h3>
+  <div class="">
+    <div class="container sandbox-title fade-in">
+      <h2>Sandbox</h2>
     </div>
     <div class="sandbox-projects">
-
       <?php
-        $sandboxOrder = new WP_Query(array(
-          'post_type' => 'sandbox',
-          'posts_per_page' => 8,
-          'order' => 'ASC',
-        ));
-        while($sandboxOrder->have_posts()) {
-          $sandboxOrder->the_post(); ?>
-          <div class="sandbox-content">
-            <a href="<?php the_field('sandbox_url') ?>" target=”_blank”><h4><?php the_title(); ?></h4></a>
-            <p><?php the_field('sandbox_categories') ?></p>
+      $sandboxPage = new WP_Query(array(
+        'posts_per_page' => 6,
+        'post_type' => 'sandbox',
+      ));
+      while($sandboxPage->have_posts()) {
+        $sandboxPage->the_post(); ?>
+          <div class="sandbox-project container-fluid">
+            <div class="container">
+              <div class="project-info">
+                <div class="project-info-bio">
+                  <h3><?php the_title(); ?></h3>
+                  <p><?php the_field('sandbox_categories') ?></p>
+                  <img src="<?php the_field('sandbox_image') ?>" alt="<?php the_title(); ?>">
+                </div>
+                <div class="project-info-links">
+                  <a href="<?php the_permalink(); ?>"><button class="btn-secondary">Read more</button></a>
+                </div>
+              </div>
+            </div>
           </div>
-        <?php }
-        echo paginate_links();
+      <?php }
+      echo paginate_links();
       ?>
-
     </div>
-    <a href="http://localhost/wordpress-portfolio/index.php/sandbox/"><p>View all sandbox projects</p></a>
+    <div class="container">
+      <a href="http://localhost/wordpress-portfolio/index.php/sandbox/"><button class="btn-primary">View all</button></a>
+    </div>
   </div>
 </section>
 
 <section class="design container-fluid">
   <div class="container">
     <div class="design-title">
-      <h3>Design</h3>
+      <h2>Design</h2>
+      <a href="http://localhost/wordpress-portfolio/index.php/design/"><button class="btn-primary">View all</button></a>
     </div>
     <div class="card-deck">
 
@@ -135,8 +152,9 @@
             <div class="card">
               <img class="card-img-top" src="<?php the_field('design_image') ?>" alt="Card image cap">
               <div class="card-body">
-                <a href="<?php the_field('design_url') ?>" target=”_blank”><h4><?php the_title(); ?></h4></a>
-                <?php the_content(); ?>
+                <h3><?php the_title(); ?></h3>
+                <p><?php the_content(); ?></p>
+                <a href="<?php the_field('design_url') ?>" target=”_blank”><button class="btn-secondary">View design</button></a>
               </div>
             </div>
         <?php }
@@ -144,14 +162,14 @@
       ?>
 
     </div>
-    <a href="http://localhost/wordpress-portfolio/index.php/design/"><p>View all designs</p></a>
   </div>
 </section>
 
 <section class="roles container-fluid">
   <div class="container">
-    <div class="roles-title">
-      <h3>Roles</h3>
+    <div class="roles-title fade-in">
+      <h2>Roles</h2>
+      <a href="http://localhost/wordpress-portfolio/index.php/roles/"><button class="btn-primary">View all</button></a>
     </div>
     <div class="roles-jobs">
 
@@ -165,7 +183,7 @@
           $rolesOrder->the_post(); ?>
           <div class="roles-content">
             <div class="company_info">
-              <h4><?php the_field('company_name') ?></h4>
+              <h3><?php the_field('company_name') ?></h3>
               <div class="role-info">
                 <p><?php the_field('company_role') ?></p>
                 <p><?php the_field('company_dates') ?></p>
@@ -180,7 +198,6 @@
       ?>
 
     </div>
-    <a href="http://localhost/wordpress-portfolio/index.php/roles/"><p>View all roles</p></a>
   </div>
 </section>
 

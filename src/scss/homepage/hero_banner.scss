@@ -4,15 +4,8 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  height: 90vh;
-  h2 {
-    @extend %heading;
-    font-family: 'Poppins', sans-serif;
-    font-size: $font-size-h2;
-    text-transform: uppercase;
-    margin-bottom: 0;
-    line-height: 1.25;
-  }
+  height: 80vh;
+  padding: 0 0 4rem 0;
   .hero-text-intro {
     width: 40%;
   }

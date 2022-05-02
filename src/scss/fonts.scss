@@ -26,61 +26,73 @@ html {
 
 %heading {
   margin-top: 0;
-  font-weight: normal
+  font-weight: bold;
+  color: #1d1d1d;
+  text-transform: uppercase;
 }
 
 h1 {
   @extend %heading;
-  font-family: 'Poppins', sans-serif;
-  font-size: $font-size-h2;
-  text-transform: uppercase;
+  font-family: 'Bodoni Moda', serif;
+  font-size: $font-size-h1;
+  line-height: 1.25
 }
 
 h2 {
   @extend %heading;
-  font-family: 'PT Serif', serif;
+  font-family: 'Bodoni Moda', serif;
   font-size: $font-size-h2;
   margin-bottom: 1.25rem
 }
 
 h3 {
   @extend %heading;
-  font-family: 'PT Serif', serif;
+  font-family: 'Bodoni Moda', serif;
   font-size: $font-size-h3;
   margin-bottom: 1.25rem
 }
 
 h4 {
   @extend %heading;
-  font-family: 'PT Serif', serif;
+  font-family: 'Bodoni Moda', serif;
   font-size: $font-size-h4;
   margin-bottom: 1.25rem
 }
 
 h5 {
   @extend %heading;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Bodoni Moda', sans-serif;
   font-size: $font-size-h5;
   margin-bottom: 1.25rem
 }
 
 p {
   font-family: 'Poppins', sans-serif;
-  font-size: $font-size-base;
-  margin-bottom: 1rem
+  font-size: $font-size-sm;
+  font-weight: 300;
+  line-height: 1.25;
+  letter-spacing: 0.05rem;
+  margin-bottom: 1rem;
+  color: #1d1d1d;
 }
 
 a {
   font-family: 'Poppins', sans-serif;
-  font-size: $font-size-base;
+  font-size: $font-size-sm;
+  font-weight: 300;
+  line-height: 1.25;
+  letter-spacing: 0.05rem;
   margin-bottom: 0.5rem;
   text-decoration: underline;
-  color: #000;
+  color: #1d1d1d;
 }
 
 a:hover {
   font-family: 'Poppins', sans-serif;
-  font-size: $font-size-base;
+  font-size: $font-size-sm;
+  font-weight: 300;
+  line-height: 1.25;
+  letter-spacing: 0.05rem;
   margin-bottom: 0.5rem;
   text-decoration: underline;
   color: #f4ca75;
@@ -90,30 +102,18 @@ ul {
   font-family: 'Poppins', sans-serif;
   font-size: $font-size-base;
   margin-left: 1.25rem;
-  margin-bottom: 1rem
+  margin-bottom: 1rem;
+  color: #1d1d1d;
 }
 
 li {
   font-family: 'Poppins', sans-serif;
   font-size: $font-size-base;
   margin-left: 1rem;
-  margin-bottom: 0.25rem
+  margin-bottom: 0.25rem;
+  color: #1d1d1d;
 }
 
 img {
   box-shadow: 0 10px 16px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
-}
-
-button {
-  background-color: #f4ca75;
-  border: 1px solid #f4ca75;
-  font-family: 'Poppins', sans-serif;
-  font-size: $font-size-base;
-  padding: 0.5rem 2rem;
-  border-radius: 20px;
-  &:hover {
-    background-color: #000;
-    border: 1px solid #000;
-    color: #fff;
-  }
 }

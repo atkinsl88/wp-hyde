@@ -6,8 +6,9 @@ Register SCSS file
 
 function sedia_files() {
   wp_enqueue_style('portfolio_main_styles', get_stylesheet_uri());
-  wp_enqueue_script( 'script', get_template_directory_uri() . '/src/js/menu.js', array ( 'jquery' ), 1.1, true);
-  wp_enqueue_style('google-font-style', 'https://fonts.googleapis.com/css2?family=PT+Serif&family=Poppins&display=swap');
+  wp_enqueue_script( 'menu', get_template_directory_uri() . '/src/js/menu.js', array ( 'jquery' ), 1.1, true);
+  wp_enqueue_script( 'animation', get_template_directory_uri() . '/src/js/animations.js', array ( 'jquery' ), 1.1, true);
+  wp_enqueue_style('google-font-style', 'https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,600;1,400;1,600&display=swap');
 }
 
 add_action('wp_enqueue_scripts', 'sedia_files');

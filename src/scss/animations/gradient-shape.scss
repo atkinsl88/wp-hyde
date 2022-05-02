@@ -1,0 +1,23 @@
+.gradient-shape {
+  position: absolute;
+  background: radial-gradient(circle, #f4ca75 0%, rgba(255, 170, 142, 0) 100%);
+  -webkit-mask-image: radial-gradient(ellipse 100% 100% at 50% 50%, black 30%, transparent 50%);
+  mask-image: radial-gradient(ellipse 100% 100% at 50% 50%, black 30%, transparent 50%);
+  width: 54vw;
+  height: 54vw;
+  left: 30vw;
+  top: -10vw;
+  -webkit-animation: scalegradientShape 8s ease-in-out infinite;
+  animation: scalegradientShape 8s ease-in-out infinite;
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
+  opacity: .5;
+  pointer-events: none;
+  z-index: -1;
+  &.is-bottom {
+    top: auto;
+    height: 38vw;
+    // bottom: -24vw;
+    left: 30vw;
+  }
+}

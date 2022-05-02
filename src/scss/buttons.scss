@@ -1,0 +1,27 @@
+button.btn-primary {
+  background-color: unset;
+  color: #1d1d1d;
+  border: unset;
+  font-family: 'Bodoni Moda', sans-serif;
+  font-size: $font-size-sm;
+  border-radius: 20px;
+  &:hover {
+    border: unset;
+    text-decoration: underline;
+  }
+}
+
+button.btn-secondary {
+  background-color: unset;
+  color: #1d1d1d;
+  border: 1px solid #1d1d1d;
+  font-family: 'Bodoni Moda', sans-serif;
+  font-size: $font-size-sm;
+  padding: 0.5rem 2rem;
+  border-radius: 20px;
+  &:hover {
+    background-color: #1d1d1d;
+    border: 1px solid #1d1d1d;
+    color: #fff;
+  }
+}
