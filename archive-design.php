@@ -38,7 +38,7 @@
               <img class="card-img-top" src="<?php the_field('design_image') ?>" alt="Card image cap">
               <div class="card-body">
                 <h3><?php the_title(); ?></h3>
-                <p><?php the_content(); ?></p>
+                <?php the_content(); ?>
                 <a href="<?php the_field('design_url') ?>" target=”_blank”><button class="btn-secondary">View design</button></a>
               </div>
             </div>

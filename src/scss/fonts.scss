@@ -80,7 +80,8 @@
 
   ul {
     font-family: 'Poppins', sans-serif;
-    font-size: $mob-font-size-base;
+    font-size: $mob-font-size-sm;
+    font-weight: 300;
     margin-left: 1.25rem;
     margin-bottom: 1rem;
     color: #1d1d1d;
@@ -88,7 +89,8 @@
 
   li {
     font-family: 'Poppins', sans-serif;
-    font-size: $mob-font-size-base;
+    font-size: $mob-font-size-sm;
+    font-weight: 300;
     margin-left: 1rem;
     margin-bottom: 0.25rem;
     color: #1d1d1d;
@@ -118,15 +120,15 @@
   }
 
   p {
-    font-size: $tab-font-size-sm;
+    font-size: $tab-font-size-md;
   }
 
   a {
-    font-size: $tab-font-size-sm;
+    font-size: $tab-font-size-md;
   }
 
   a:hover {
-    font-size: $tab-font-size-sm;
+    font-size: $tab-font-size-md;
   }
 
   ul {
@@ -173,10 +175,10 @@
   }
 
   ul {
-    font-size: $desk-font-size-base;
+    font-size: $desk-font-size-sm;
   }
 
   li {
-    font-size: $desk-font-size-base;
+    font-size: $desk-font-size-sm;
   }
 }

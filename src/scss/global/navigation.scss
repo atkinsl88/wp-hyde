@@ -15,7 +15,7 @@
       color: black;
     }
     p {
-      font-size: $font-size-lg;
+      font-size: $desk-font-size-lg;
       text-transform: uppercase;
     }
   }
@@ -27,7 +27,7 @@
       .line {
         width: 60px;
         height: 2px;
-        background-color: #000;
+        background-color: #1d1d1d;
         margin: 6px 0;
       }
       &:hover {

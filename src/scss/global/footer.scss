@@ -13,6 +13,9 @@
         display: flex;
         justify-content: flex-start;
         margin-bottom: 2rem;
+        :nth-child(1) {
+          margin-right: 0.25rem;
+        }
       }
       .footer-main {
         display: flex;
@@ -28,10 +31,12 @@
           .row-1 {
             display: flex;
             flex-direction: column;
+            width: 50%;
           }
           .row-2 {
             display: flex;
             flex-direction: column;
+            width: 50%;
           }
         }
       }

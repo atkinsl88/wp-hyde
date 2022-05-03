@@ -30,8 +30,8 @@
         
       </div>
 
-      <div class="footer-title">
-        <h1>Hy-de</h1>
+      <div class="footer-title fade-in">
+        <h1>Hyde</h1>
       </div>
 
       <div class="footer-date">

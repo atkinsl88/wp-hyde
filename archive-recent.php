@@ -9,7 +9,7 @@
 <section class="page-hero container-fluid">
   <div class="container">
     <div class="page-hero-text fade-in">
-      <h1>Recent</h1>
+      <h1>Recent Work</h1>
     </div>
   </div>
 </section>
@@ -37,7 +37,7 @@
               <div class="project-info-bio">
                 <h3><?php the_title(); ?></h3>
                 <p><?php the_field('recent_description') ?></p>
-                <img class="fade-in-image" src="<?php the_field('recent_image') ?>" alt="<?php the_title(); ?>">
+                <img class="fade-in-image" src="<?php the_field('recent_image_row') ?>" alt="<?php the_title(); ?>">
               </div>
               <div class="project-info-links">
                 <a href="<?php the_permalink(); ?>"><button class="btn-secondary">Read more</button></a>

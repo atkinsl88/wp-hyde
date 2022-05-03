@@ -4,17 +4,20 @@
   <div class="container">
     <div class="page-hero-text">
       <h1><?php the_title(); ?></h1>
-      <div class="dynamic">
-        <a href="<?php the_field('sandbox_url') ?>" target=”_blank”><button>View Site</button></a>
-        <a href="<?php the_field('sandbox_repo') ?>" target=”_blank”><button>View Repo</button></a>
-      </div>
     </div>
+    <div class="dynamic">
+        <a href="<?php the_field('sandbox_url') ?>" target=”_blank”><button class="btn-secondary">View Site</button></a>
+        <a href="<?php the_field('sandbox_design') ?>" target=”_blank”><button class="btn-secondary">View Design</button></a>
+        <a href="<?php the_field('sandbox_repo') ?>" target=”_blank”><button class="btn-secondary">View Repo</button></a>
+      </div>
   </div>
 </section>
 
 <section class="container-fluid">
   <div class="container">
-    <?php the_content() ?>
+    <div class="page-content">
+      <?php the_content(); ?>
+    </div>
   </div>
 </section>
 

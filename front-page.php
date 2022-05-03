@@ -6,7 +6,7 @@
     </div>
     <div class="hero-content">
       <div class="hero-text-intro">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin convallis nisi quis volutpat efficitur. In ac dui congue, vehicula nisl et, dignissim justo.</p>
+        <p>Passionate and commercially-aware digital creative.</p>
       </div>
       <div class="hero-text-1 fade-in">
         <h1>Software Developer</h1>
@@ -15,7 +15,7 @@
         <h1>Digital Design</h1>
       </div>
       <div class="hero-text-3 fade-in">
-        <h1>& Project Delivery</h1>
+        <h1>& Delivery</h1>
       </div>
     </div>
   </div>
@@ -100,7 +100,6 @@
   <div class="">
     <div class="container sandbox-title fade-in">
       <h2>Sandbox</h2>
-      <a href="http://localhost/wordpress-portfolio/index.php/sandbox/"><button class="btn-primary">View all</button></a>
     </div>
     <div class="sandbox-projects">
       <?php
@@ -153,7 +152,7 @@
               <img class="card-img-top" src="<?php the_field('design_image') ?>" alt="Card image cap">
               <div class="card-body">
                 <h3><?php the_title(); ?></h3>
-                <p><?php the_content(); ?></p>
+                <?php the_content(); ?>
                 <a href="<?php the_field('design_url') ?>" target=”_blank”><button class="btn-secondary">View design</button></a>
               </div>
             </div>
@@ -161,9 +160,7 @@
         echo paginate_links();
       ?>
     </div>
-    <div class="container">
-      <a href="http://localhost/wordpress-portfolio/index.php/design/"><button class="btn-primary">View all</button></a>
-    </div>
+    <a href="http://localhost/wordpress-portfolio/index.php/design/"><button class="btn-primary">View all</button></a>
   </div>
 </section>
 
