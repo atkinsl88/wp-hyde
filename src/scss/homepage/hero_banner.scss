@@ -1,30 +1,42 @@
 /* Hero Banner */
 
-.hero {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  height: 80vh;
-  padding: 0 0 4rem 0;
-  .hero-text-intro {
-    width: 40%;
-  }
-  .hero-text-1 {
+@include media-breakpoint-up (xs) {
+  .hero {
     display: flex;
-    justify-content: flex-start;
-    height: auto;
-    width: 100%;
-  }
-  .hero-text-2 {
-    display: flex;
+    flex-direction: column;
     justify-content: flex-end;
     height: auto;
-    width: 100%;
+    padding: 4rem 0 4rem 0;
+    .hero-text-intro {
+      width: 80%;
+    }
+    .hero-text-1 {
+      display: flex;
+      justify-content: flex-start;
+      height: auto;
+      width: 100%;
+    }
+    .hero-text-2 {
+      display: flex;
+      justify-content: flex-end;
+      height: auto;
+      width: 100%;
+    }
+    .hero-text-3 {
+      display: flex;
+      justify-content: flex-start;
+      height: auto;
+      width: 100%;
+    }
   }
-  .hero-text-3 {
-    display: flex;
-    justify-content: flex-start;
-    height: auto;
-    width: 100%;
+}
+
+@include media-breakpoint-up (md) {
+  .hero {
+    height: 80vh;
+    padding: 0 0 4rem 0;
+    .hero-text-intro {
+      width: 40%;
+    }
   }
 }

@@ -37,7 +37,7 @@
               <div class="project-info-bio">
                 <h3><?php the_title(); ?></h3>
                 <p><?php the_field('sandbox_categories') ?></p>
-                <img src="<?php the_field('sandbox_image') ?>" alt="<?php the_title(); ?>">
+                <img class="fade-in-image" src="<?php the_field('sandbox_image') ?>" alt="<?php the_title(); ?>">
               </div>
               <div class="project-info-links">
                 <a href="<?php the_permalink(); ?>"><button class="btn-secondary">Read more</button></a>

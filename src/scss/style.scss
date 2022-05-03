@@ -6,12 +6,16 @@
 /** Global Variables **/
 @import 'variables.scss';
 
+/** Mixins **/
+@import 'breakpoints.scss';
+
 /** Bootstrap Grid **/
 @import 'bs-grid.scss';
 
 /** Elements Styles **/
 @import 'fonts.scss';
 @import 'buttons.scss';
+@import 'images.scss';
 
 /** Global Components **/
 @import 'global/navigation.scss';
@@ -22,6 +26,7 @@
 @import 'animations/horizontal-text.scss';
 @import 'animations/gradient-shape.scss';
 @import 'animations/fade-in.scss';
+@import 'animations/img-fade-up.scss';
 
 /** Menu **/
 @import 'menu/menu.scss';

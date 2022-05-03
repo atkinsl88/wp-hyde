@@ -1,14 +1,47 @@
 /** Variables **/
 
 /** Font Sizes **/
-$font-size-base: 1rem; // Assumes the browser default, typically `16px`
-$font-size-sm: $font-size-base * .875;
-$font-size-md: $font-size-base * 1.125;
-$font-size-lg: $font-size-base * 2.5;
 
-$font-size-h1: $font-size-base * 5.5; //xx;
-$font-size-h2: $font-size-base * 5; //xx;
-$font-size-h3: $font-size-base * 3; //xx;
-$font-size-h4: $font-size-base * 2; //xx;
-$font-size-h5: $font-size-base * 1.25; //xx;
-$font-size-h6: $font-size-base * 0.875; //xx;
+$mob-font-size-base: 1rem; // Assumes the browser default, typically `16px`
+$mob-font-size-sm: $mob-font-size-base * .75;
+$mob-font-size-md: $mob-font-size-base * 1.125;
+$mob-font-size-lg: $mob-font-size-base * 2.5;
+$mob-font-size-h1: $mob-font-size-base * 2.5; //xx;
+$mob-font-size-h2: $mob-font-size-base * 2; //xx;
+$mob-font-size-h3: $mob-font-size-base * 1.5; //xx;
+$mob-font-size-h4: $mob-font-size-base * 1; //xx;
+$mob-font-size-h5: $mob-font-size-base * 0.25; //xx;
+$mob-font-size-h6: $mob-font-size-base * 0.875; //xx;
+
+$tab-font-size-base: 1rem; // Assumes the browser default, typically `16px`
+$tab-font-size-sm: $tab-font-size-base * .75;
+$tab-font-size-md: $tab-font-size-base * 1.125;
+$tab-font-size-lg: $tab-font-size-base * 4.5;
+$tab-font-size-h1: $tab-font-size-base * 3.5; //xx;
+$tab-font-size-h2: $tab-font-size-base * 3; //xx;
+$tab-font-size-h3: $tab-font-size-base * 2; //xx;
+$tab-font-size-h4: $tab-font-size-base * 1; //xx;
+$tab-font-size-h5: $tab-font-size-base * 0.25; //xx;
+$tab-font-size-h6: $tab-font-size-base * 0.875; //xx;
+
+$desk-font-size-base: 1rem; // Assumes the browser default, typically `16px`
+$desk-font-size-sm: $desk-font-size-base * .875;
+$desk-font-size-md: $desk-font-size-base * 1.125;
+$desk-font-size-lg: $desk-font-size-base * 2.5;
+$desk-font-size-h1: $desk-font-size-base * 4.5; //xx;
+$desk-font-size-h2: $desk-font-size-base * 4; //xx;
+$desk-font-size-h3: $desk-font-size-base * 3; //xx;
+$desk-font-size-h4: $desk-font-size-base * 1; //xx;
+$desk-font-size-h5: $desk-font-size-base * 0.25; //xx;
+$desk-font-size-h6: $desk-font-size-base * 0.875; //xx;
+
+
+/** Breakpoints **/
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1201px,
+  xxl: 1400px
+);

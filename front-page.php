@@ -9,7 +9,7 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin convallis nisi quis volutpat efficitur. In ac dui congue, vehicula nisl et, dignissim justo.</p>
       </div>
       <div class="hero-text-1 fade-in">
-        <h1>Software Development</h1>
+        <h1>Software Developer</h1>
       </div>
       <div class="hero-text-2 fade-in">
         <h1>Digital Design</h1>
@@ -60,12 +60,12 @@
         while($recentOrder2->have_posts()) {
           $recentOrder2->the_post(); ?>
           <div class="recent-content-two">
-            <img src="<?php the_field('recent_image') ?>" alt="<?php the_title(); ?>">
             <div class="content-two">
               <h3><?php the_title(); ?></h3>
               <p><?php the_field('recent_description') ?></p>
               <a href="<?php the_permalink(); ?>"><button class="btn-secondary">Read more</button></a>
             </div>
+            <img src="<?php the_field('recent_image') ?>" alt="<?php the_title(); ?>">
           </div>
         <?php }
         echo paginate_links();
@@ -100,6 +100,7 @@
   <div class="">
     <div class="container sandbox-title fade-in">
       <h2>Sandbox</h2>
+      <a href="http://localhost/wordpress-portfolio/index.php/sandbox/"><button class="btn-primary">View all</button></a>
     </div>
     <div class="sandbox-projects">
       <?php
@@ -115,7 +116,7 @@
                 <div class="project-info-bio">
                   <h3><?php the_title(); ?></h3>
                   <p><?php the_field('sandbox_categories') ?></p>
-                  <img src="<?php the_field('sandbox_image') ?>" alt="<?php the_title(); ?>">
+                  <img class="fade-in-image" src="<?php the_field('sandbox_image') ?>" alt="<?php the_title(); ?>">
                 </div>
                 <div class="project-info-links">
                   <a href="<?php the_permalink(); ?>"><button class="btn-secondary">Read more</button></a>
@@ -137,7 +138,6 @@
   <div class="container">
     <div class="design-title">
       <h2>Design</h2>
-      <a href="http://localhost/wordpress-portfolio/index.php/design/"><button class="btn-primary">View all</button></a>
     </div>
     <div class="card-deck">
 
@@ -160,7 +160,9 @@
         <?php }
         echo paginate_links();
       ?>
-
+    </div>
+    <div class="container">
+      <a href="http://localhost/wordpress-portfolio/index.php/design/"><button class="btn-primary">View all</button></a>
     </div>
   </div>
 </section>
@@ -169,7 +171,6 @@
   <div class="container">
     <div class="roles-title fade-in">
       <h2>Roles</h2>
-      <a href="http://localhost/wordpress-portfolio/index.php/roles/"><button class="btn-primary">View all</button></a>
     </div>
     <div class="roles-jobs">
 
@@ -196,7 +197,9 @@
         <?php }
         echo paginate_links();
       ?>
-
+    </div>
+    <div class="container">
+      <a href="http://localhost/wordpress-portfolio/index.php/roles/"><button class="btn-primary">View all</button></a>
     </div>
   </div>
 </section>
