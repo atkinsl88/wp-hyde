@@ -13,20 +13,23 @@
   .roles-title {
     padding-bottom: 2rem;
   }
-  .roles-content {
-    display: flex;
-    margin-bottom: 2rem;
-    .company_info {
-      width: 40%;
-      .role-info {
-        margin-left: 0.5rem;
-        p {
-          margin-bottom: 0.25rem;
+  .roles-jobs{
+    margin-bottom: 4rem;
+    .roles-content {
+      display: flex;
+      margin-bottom: 2rem;
+      .company_info {
+        width: 40%;
+        .role-info {
+          margin-left: 0.5rem;
+          p {
+            margin-bottom: 0.25rem;
+          }
         }
       }
-    }
-    .company_bio {
-      width: 40%;
+      .company_bio {
+        width: 40%;
+      }
     }
   }
 }

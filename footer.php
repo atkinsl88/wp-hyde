@@ -8,7 +8,7 @@
 
       <div class="footer-social">
         <a href="https://www.linkedin.com/in/liam-atkins-51753444" target=”_blank”><button class="btn-secondary">LinkedIn</button></a>
-        <a href="/" target=”_blank”><button class="btn-secondary">Twitter</button></a>
+        <a href="https://github.com/atkinsl88" target=”_blank”><button class="btn-secondary">GitHub</button></a>
       </div>
 
       <div class="footer-main">
@@ -17,13 +17,10 @@
         </div>
         <div class="footer-links">
           <div class="row-1">
-          <a href="/" target=”_blank”>Recent Work</a>
-          <a href="/" target=”_blank”>Sandbox</a>
-          <a href="/" target=”_blank”>Design</a>
-          <a href="/" target=”_blank”>Roles</a>
-          </div>
-          <div class="row-2">
-          <a href="https://github.com/atkinsl88" target=”_blank”>Github</a>
+          <a href="/recent" target=”_blank”>Recent Work</a>
+          <a href="/sandbox" target=”_blank”>Sandbox</a>
+          <a href="/design" target=”_blank”>Design</a>
+          <a href="/roles" target=”_blank”>Roles</a>
           <a href="https://stackoverflow.com/users/9015783/hyde" target=”_blank”>Stack Overflow</a>
           </div>
         </div>
@@ -31,7 +28,7 @@
       </div>
 
       <div class="footer-title fade-in">
-        <h1>Hyde</h1>
+        <p>Hy-de</p>
       </div>
 
       <div class="footer-date">
@@ -68,9 +65,6 @@
           <a href="/design"><h3>Design</h3></a>
           <a href="/roles"><h3>Roles</h3></a>
         </div>
-        <!-- <div class="menu-info">
-          <p>info@hyde.com | +44(0)75 123 456</p>
-        </div> -->
       </div>
     </div>
   </div>

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
 Theme Name: HY-DE
 Author: Liam Atkins
@@ -1483,7 +1484,7 @@ li {
 }
 @media (min-width: 992px) {
   h1 {
-    font-size: 4.5rem;
+    font-size: 7.5rem;
   }
 
   h2 {
@@ -1524,21 +1525,24 @@ li {
 }
 button.btn-primary {
   cursor: pointer;
-  background-color: unset;
-  color: #1d1d1d;
-  border: unset;
+  background-color: #f4ca75;
+  color: #000;
+  border: 1px solid #f4ca75;
   font-family: "Poppins", sans-serif;
   font-size: 0.875rem;
+  padding: 0.4rem 3rem;
   border-radius: 20px;
+  text-transform: uppercase;
 }
 button.btn-primary:hover {
-  border: unset;
-  text-decoration: underline;
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #000;
 }
 
 button.btn-primary::after {
   padding-left: 0.5rem;
-  content: ">";
+  content: "→";
 }
 
 button.btn-primary:hover::after {
@@ -1551,10 +1555,11 @@ button.btn-secondary {
   background-color: unset;
   color: #1d1d1d;
   border: 1px solid #1d1d1d;
-  font-family: "Bodoni Moda", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 0.875rem;
-  padding: 0.5rem 2rem;
+  padding: 0.4rem 2.5rem;
   border-radius: 20px;
+  text-transform: uppercase;
 }
 button.btn-secondary:hover {
   background-color: #1d1d1d;
@@ -1575,6 +1580,8 @@ img {
   justify-content: space-between;
   padding-right: var(--bs-gutter-x, 0.75rem);
   padding-left: var(--bs-gutter-x, 0.75rem);
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   margin-right: auto;
   margin-left: auto;
 }
@@ -1585,6 +1592,7 @@ img {
 .navigation .navigation-title p {
   font-size: 2.5rem;
   text-transform: uppercase;
+  margin-bottom: 0;
 }
 .navigation .navigation-burger {
   display: flex;
@@ -1622,7 +1630,7 @@ img {
 /* Navigation Styles */
 .footer {
   margin-top: 4rem;
-  min-height: 95vh;
+  min-height: 75vh;
   height: auto;
 }
 .footer .footer-contents {
@@ -1640,7 +1648,7 @@ img {
 }
 .footer .footer-contents .footer-main {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   margin-bottom: 4rem;
 }
 .footer .footer-contents .footer-main .footer-info {
@@ -1654,20 +1662,18 @@ img {
 .footer .footer-contents .footer-main .footer-links .row-1 {
   display: flex;
   flex-direction: column;
-  width: 50%;
 }
-.footer .footer-contents .footer-main .footer-links .row-2 {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
+.footer .footer-contents .footer-main .footer-links .row-1 a {
+  text-decoration: none;
 }
 .footer .footer-contents .footer-title {
   margin: 4rem 0;
   display: flex;
   justify-content: flex-end;
 }
-.footer .footer-contents .footer-title h1 {
-  margin-bottom: 0;
+.footer .footer-contents .footer-title p {
+  font-size: 7.5rem;
+  text-transform: uppercase;
 }
 .footer .footer-contents .footer-date {
   display: flex;
@@ -1927,7 +1933,7 @@ img {
 }
 .hero .hero-text-2 {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-around;
   height: auto;
   width: 100%;
 }
@@ -1980,7 +1986,7 @@ img {
   margin-bottom: 0;
 }
 .recent .recent-projects .recent-content-one .content-one p {
-  margin-bottom: 2rem;
+  margin-bottom: 1.25rem;
 }
 .recent .recent-projects .recent-content-one .content-one a {
   margin-top: 1rem;
@@ -2003,7 +2009,7 @@ img {
   margin-bottom: 0;
 }
 .recent .recent-projects .recent-content-two .content-two p {
-  margin-bottom: 2rem;
+  margin-bottom: 1.25rem;
 }
 .recent .recent-projects .recent-content-two .content-two a {
   margin-top: 1rem;
@@ -2026,7 +2032,7 @@ img {
   margin-bottom: 0;
 }
 .recent .recent-projects .recent-content-three .content-three p {
-  margin-bottom: 2rem;
+  margin-bottom: 1.25rem;
 }
 .recent .recent-projects .recent-content-three .content-three a {
   margin-top: 1rem;
@@ -2145,9 +2151,11 @@ img {
 @media (min-width: 768px) {
   .sandbox .sandbox-projects .sandbox-project .project-info {
     flex-direction: row;
+    align-items: center;
   }
   .sandbox .sandbox-projects .sandbox-project .project-info .project-info-bio {
     flex-direction: row;
+    align-items: baseline;
   }
   .sandbox .sandbox-projects .sandbox-project .project-info .project-info-bio p {
     margin-left: 6rem;
@@ -2168,20 +2176,23 @@ img {
 .roles .roles-title {
   padding-bottom: 2rem;
 }
-.roles .roles-content {
+.roles .roles-jobs {
+  margin-bottom: 4rem;
+}
+.roles .roles-jobs .roles-content {
   display: flex;
   margin-bottom: 2rem;
 }
-.roles .roles-content .company_info {
+.roles .roles-jobs .roles-content .company_info {
   width: 40%;
 }
-.roles .roles-content .company_info .role-info {
+.roles .roles-jobs .roles-content .company_info .role-info {
   margin-left: 0.5rem;
 }
-.roles .roles-content .company_info .role-info p {
+.roles .roles-jobs .roles-content .company_info .role-info p {
   margin-bottom: 0.25rem;
 }
-.roles .roles-content .company_bio {
+.roles .roles-jobs .roles-content .company_bio {
   width: 40%;
 }
 
@@ -2210,6 +2221,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-bottom: 3rem;
 }
 .design .card-deck .card {
   margin-bottom: 2rem;

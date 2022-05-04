@@ -17,7 +17,11 @@
 <section class="container-fluid">
   <div class="container">
     <div class="page-content">
-      <?php the_content(); ?>
+      <?php
+        $recentPage = get_page_by_title( 'recent' );
+        $recentContent = apply_filters('the_content', $recentPage->post_content); 
+        echo $recentContent;
+      ?>
     </div>
   </div>
 </section>

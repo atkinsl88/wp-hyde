@@ -7,6 +7,8 @@
   justify-content: space-between;
   padding-right: var(--bs-gutter-x, 0.75rem);
   padding-left: var(--bs-gutter-x, 0.75rem);
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   margin-right: auto;
   margin-left: auto;
   .navigation-title {
@@ -17,6 +19,7 @@
     p {
       font-size: $desk-font-size-lg;
       text-transform: uppercase;
+      margin-bottom: 0;
     }
   }
   .navigation-burger {

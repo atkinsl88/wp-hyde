@@ -1,20 +1,23 @@
 button.btn-primary {
   cursor: pointer;
-  background-color: unset;
-  color: #1d1d1d;
-  border: unset;
+  background-color: #f4ca75;
+  color: #000;
+  border: 1px solid #f4ca75;
   font-family: 'Poppins', sans-serif;
   font-size: $font-size-sm;
+  padding: 0.4rem 3rem;
   border-radius: 20px;
+  text-transform: uppercase;
   &:hover {
-    border: unset;
-    text-decoration: underline;
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #000;
   }
 }
 
 button.btn-primary::after {
   padding-left: 0.5rem;
-  content: '>';
+  content: '→';
 }
 
 button.btn-primary:hover::after {
@@ -28,10 +31,11 @@ button.btn-secondary {
   background-color: unset;
   color: #1d1d1d;
   border: 1px solid #1d1d1d;
-  font-family: 'Bodoni Moda', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: $font-size-sm;
-  padding: 0.5rem 2rem;
+  padding: 0.4rem 2.5rem;
   border-radius: 20px;
+  text-transform: uppercase;
   &:hover {
     background-color: #1d1d1d;
     border: 1px solid #1d1d1d;

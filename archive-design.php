@@ -17,7 +17,11 @@
 <section class="container-fluid">
   <div class="container">
     <div class="page-content">
-      <?php the_content(); ?>
+      <?php
+        $designPage = get_page_by_title( 'design' );
+        $designContent = apply_filters('the_content', $designPage->post_content); 
+        echo $designContent;
+      ?>
     </div>
   </div>
 </section>

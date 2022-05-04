@@ -17,7 +17,11 @@
 <section class="container-fluid">
   <div class="container">
     <div class="page-content">
-      <?php the_content(); ?>
+    <?php
+      $sandboxPage = get_page_by_title( 'sandbox' );
+      $sandboxContent = apply_filters('the_content', $sandboxPage->post_content); 
+      echo $sandboxContent;
+    ?>
     </div>
   </div>
 </section>

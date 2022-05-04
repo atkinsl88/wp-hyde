@@ -3,7 +3,7 @@
 @include media-breakpoint-up (xs) {
   .footer {
     margin-top: 4rem;
-    min-height: 95vh;
+    min-height: 75vh;
     height: auto;
     .footer-contents {
       display: flex;
@@ -19,7 +19,7 @@
       }
       .footer-main {
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-start;
         margin-bottom: 4rem;
         .footer-info {
           display: flex;
@@ -31,12 +31,9 @@
           .row-1 {
             display: flex;
             flex-direction: column;
-            width: 50%;
-          }
-          .row-2 {
-            display: flex;
-            flex-direction: column;
-            width: 50%;
+            a {
+              text-decoration: none;
+            }
           }
         }
       }
@@ -44,8 +41,9 @@
         margin: 4rem 0;
         display: flex;
         justify-content: flex-end;
-        h1 {
-          margin-bottom: 0;
+        p {
+          font-size: $desk-font-size-lg * 3;
+          text-transform: uppercase;
         }
       }
       .footer-date {

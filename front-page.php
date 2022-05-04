@@ -5,17 +5,15 @@
     <div class="gradient-shape">
     </div>
     <div class="hero-content">
-      <div class="hero-text-intro">
-        <p>Passionate and commercially-aware digital creative.</p>
-      </div>
       <div class="hero-text-1 fade-in">
-        <h1>Software Developer</h1>
+        <h1>Web Designer</h1>
       </div>
       <div class="hero-text-2 fade-in">
-        <h1>Digital Design</h1>
+        <h1>&</h1>
+        <h1>Frontend</h1>
       </div>
       <div class="hero-text-3 fade-in">
-        <h1>& Delivery</h1>
+        <h1>Developer</h1>
       </div>
     </div>
   </div>
@@ -25,7 +23,7 @@
   <div class="container">
     <div class="recent-title">
       <h2>Recent</h2>
-      <a href="http://localhost/wordpress-portfolio/index.php/recent/"><button class="btn-primary">View all</button></a>
+      <a href="/recent"><button class="btn-primary">View all</button></a>
     </div>
     <div class="recent-projects">
 
@@ -128,7 +126,7 @@
       ?>
     </div>
     <div class="container">
-      <a href="http://localhost/wordpress-portfolio/index.php/sandbox/"><button class="btn-primary">View all</button></a>
+      <a href="/sandbox"><button class="btn-primary">View all</button></a>
     </div>
   </div>
 </section>
@@ -160,7 +158,7 @@
         echo paginate_links();
       ?>
     </div>
-    <a href="http://localhost/wordpress-portfolio/index.php/design/"><button class="btn-primary">View all</button></a>
+    <a href="/design"><button class="btn-primary">View all</button></a>
   </div>
 </section>
 
@@ -196,7 +194,7 @@
       ?>
     </div>
     <div class="container">
-      <a href="http://localhost/wordpress-portfolio/index.php/roles/"><button class="btn-primary">View all</button></a>
+      <a href="/roles"><button class="btn-primary">View all</button></a>
     </div>
   </div>
 </section>

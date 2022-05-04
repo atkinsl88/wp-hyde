@@ -17,7 +17,11 @@
 <section class="container-fluid">
   <div class="container">
     <div class="page-content">
-      <?php the_content(); ?>
+      <?php
+        $rolePage = get_page_by_title( 'roles' );
+        $roleContent = apply_filters('the_content', $rolePage->post_content); 
+        echo $roleContent;
+      ?>
     </div>
   </div>
 </section>

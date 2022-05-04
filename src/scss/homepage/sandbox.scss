@@ -75,8 +75,10 @@
       .sandbox-project {
         .project-info {
           flex-direction: row;
+          align-items: center;
           .project-info-bio {
             flex-direction: row;
+            align-items: baseline;
             p {
               margin-left: 6rem;
             }
