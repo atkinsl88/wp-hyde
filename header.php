@@ -12,7 +12,7 @@
   <nav class="container-fluid">
     <div class="navigation container">
       <div class="navigation-title">
-        <a href="http://localhost/wordpress-portfolio/"><p>Hyde</p></a>
+        <a href="http://localhost/wordpress-portfolio/"><p>Hy-de</p></a>
       </div>
       <div class="navigation-burger">
         <div class="burger" onclick="myFunction()">
