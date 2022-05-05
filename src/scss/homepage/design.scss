@@ -24,9 +24,9 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
-      margin-bottom: 3rem;
+      margin-bottom: 2rem;
       .card {
-        margin-bottom: 2rem;
+        margin-bottom: 4rem;
         img {
           width: 100%;
         }
@@ -36,7 +36,7 @@
         }
         .card-body {
           p {
-            margin-bottom: 2rem;
+            margin-bottom: 1rem;
           }
         }
       }

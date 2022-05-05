@@ -1,71 +1,84 @@
 /* Navigation Styles */
 
-.navigation {
-  height: auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-right: var(--bs-gutter-x, 0.75rem);
-  padding-left: var(--bs-gutter-x, 0.75rem);
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  margin-right: auto;
-  margin-left: auto;
-  .navigation-title {
-    a {
-      text-decoration: none;
-      color: black;
-    }
-    p {
-      font-size: $desk-font-size-lg;
-      text-transform: uppercase;
-      margin-bottom: 0;
-    }
-  }
-  .navigation-burger {
+@include media-breakpoint-up (xs) {
+  .navigation {
+    height: auto;
     display: flex;
     align-items: center;
-    .burger {
-      margin-right: 0.5rem;
-      .line {
-        width: 60px;
-        height: 2px;
-        background-color: #1d1d1d;
-        margin: 6px 0;
+    justify-content: space-between;
+    padding-right: var(--bs-gutter-x, 0.75rem);
+    padding-left: var(--bs-gutter-x, 0.75rem);
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-right: auto;
+    margin-left: auto;
+    .navigation-title {
+      a {
+        text-decoration: none;
+        color: black;
       }
-      &:hover {
+      p {
+        font-size: $desk-font-size-md;
+        text-transform: uppercase;
+        margin-bottom: 0;
+      }
+    }
+    .navigation-burger {
+      display: flex;
+      align-items: center;
+      .burger {
+        margin-right: 0.5rem;
         .line {
-          margin: 3px 0;
+          width: 60px;
+          height: 2px;
+          background-color: #1d1d1d;
+          margin: 6px 0;
+        }
+        &:hover {
+          .line {
+            margin: 3px 0;
+          }
+        }
+      }
+      .title {
+        p {
+          margin-bottom: 0;
         }
       }
     }
-    .title {
-      p {
-        margin-bottom: 0;
+  }
+  
+  .modal {
+    .navigation {
+      .navigation-title {
+        p {
+          color: #fff;
+        }
+        a {
+          color: #fff;
+        }
+      }
+      .navigation-burger {
+        .burger {
+          .line {
+            background-color: #fff;
+          }
+        }
+        p {
+          color: #fff;
+        }
       }
     }
   }
 }
 
-.modal {
+@include media-breakpoint-up (md) {
   .navigation {
     .navigation-title {
       p {
-        color: #fff;
-      }
-      a {
-        color: #fff;
-      }
-    }
-    .navigation-burger {
-      .burger {
-        .line {
-          background-color: #fff;
-        }
-      }
-      p {
-        color: #fff;
+        font-size: $desk-font-size-lg;
       }
     }
   }
+  
 }

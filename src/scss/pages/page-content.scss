@@ -1,7 +1,14 @@
-.page-content {
-  min-height: auto;
-  margin-bottom: 4rem;
-  p {
-    width: 50%;
+@include media-breakpoint-up(xs) {
+  .page-content {
+    min-height: auto;
+    margin-bottom: 4rem;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .page-content {
+    p {
+      width: 50%;
+    }
   }
 }

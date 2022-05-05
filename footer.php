@@ -17,9 +17,9 @@
         </div>
         <div class="footer-links">
           <div class="row-1">
-          <a href="/recent" target=”_blank”>Recent Work</a>
-          <a href="/sandbox" target=”_blank”>Sandbox</a>
-          <a href="/design" target=”_blank”>Design</a>
+          <a href="/recent">Recent Work</a>
+          <a href="/sandbox">Sandbox</a>
+          <a href="/design">Design</a>
           <a href="/roles" target=”_blank”>Roles</a>
           <a href="https://stackoverflow.com/users/9015783/hyde" target=”_blank”>Stack Overflow</a>
           </div>

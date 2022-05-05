@@ -193,7 +193,7 @@
         echo paginate_links();
       ?>
     </div>
-    <div class="container">
+    <div>
       <a href="/roles"><button class="btn-primary">View all</button></a>
     </div>
   </div>

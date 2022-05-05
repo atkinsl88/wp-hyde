@@ -1,34 +1,60 @@
 /* Sandbox Styles */
 
-.roles {
-  min-height: 100vh;
-  height: auto;
-  padding: 4rem 0;
-  a {
-    text-decoration: none;
-    &:hover {
-      text-decoration: underline;
+
+@include media-breakpoint-up (xs) {
+  .roles {
+    min-height: 100vh;
+    height: auto;
+    padding: 4rem 0;
+    a {
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
     }
-  }
-  .roles-title {
-    padding-bottom: 2rem;
-  }
-  .roles-jobs{
-    margin-bottom: 4rem;
-    .roles-content {
-      display: flex;
-      margin-bottom: 2rem;
-      .company_info {
-        width: 40%;
-        .role-info {
-          margin-left: 0.5rem;
-          p {
-            margin-bottom: 0.25rem;
+    .roles-title {
+      padding-bottom: 2rem;
+    }
+    .roles-jobs{
+      margin-bottom: 4rem;
+      .roles-content {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2rem;
+        .company_info {
+          // width: 50%;
+          .role-info {
+            margin-left: 0;
+            p {
+              margin-bottom: 0;
+            }
           }
         }
+        .company_bio {
+          // width: 50%;
+        }
       }
-      .company_bio {
-        width: 40%;
+    }
+  }
+}
+
+@include media-breakpoint-up (lg) {
+  .roles {
+    .roles-jobs{
+      .roles-content {
+        flex-direction: row;
+        .company_info {
+          width: 40%;
+          .role-info {
+            margin-left: 0.5rem;
+            p {
+              margin-bottom: 0.25rem;
+            }
+          }
+        }
+        .company_bio {
+          width: 40%;
+        }
       }
     }
   }

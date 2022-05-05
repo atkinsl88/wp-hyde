@@ -13,11 +13,20 @@
  @import "../../../node_modules/bootstrap/scss/containers";
  @import "../../../node_modules/bootstrap/scss/grid";
  
-//  .container {
-//   width: auto;
-// }
 
- .container-fluid {
-   width: auto;
- }
+@include media-breakpoint-up (xs) {
+  .container {
+    width: auto;
+  }
+}
+
+@include media-breakpoint-up (lg) {
+  .container {
+    width: 100%;
+  }
+}
+
+.container-fluid {
+  width: auto;
+}
  

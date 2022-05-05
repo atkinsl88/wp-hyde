@@ -13,6 +13,7 @@
         display: flex;
         justify-content: flex-start;
         margin-bottom: 2rem;
+        flex-wrap: wrap;
         :nth-child(1) {
           margin-right: 0.25rem;
         }
@@ -42,7 +43,7 @@
         display: flex;
         justify-content: flex-end;
         p {
-          font-size: $desk-font-size-lg * 3;
+          font-size: $desk-font-size-lg;
           text-transform: uppercase;
         }
       }
@@ -51,6 +52,18 @@
         justify-content: flex-start;
         h3 {
           margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up (lg) {
+  .footer {
+    .footer-contents {
+      .footer-title {
+        p {
+          font-size: $desk-font-size-lg * 3;
         }
       }
     }
