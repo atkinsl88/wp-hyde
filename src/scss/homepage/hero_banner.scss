@@ -2,12 +2,16 @@
 
 @include media-breakpoint-up (xs) {
   .hero {
-    min-height: 85vh;
+    min-height: 60vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     height: auto;
     padding: 4rem 0 4rem 0;
+    .container {
+      margin-left: 0;
+      margin-right: 0;
+    }
     .hero-text-intro {
       width: 80%;
     }
@@ -36,6 +40,10 @@
   .hero {
     height: 90vh;
     padding: 0 0 4rem 0;
+    .container {
+      margin-left: auto;
+      margin-right: auto;
+    }
     .hero-text-intro {
       width: 40%;
     }

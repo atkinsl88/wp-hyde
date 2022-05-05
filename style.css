@@ -1944,12 +1944,16 @@ img {
 /** Homepage Styles **/
 /* Hero Banner */
 .hero {
-  min-height: 85vh;
+  min-height: 60vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   height: auto;
   padding: 4rem 0 4rem 0;
+}
+.hero .container {
+  margin-left: 0;
+  margin-right: 0;
 }
 .hero .hero-text-intro {
   width: 80%;
@@ -1977,6 +1981,10 @@ img {
   .hero {
     height: 90vh;
     padding: 0 0 4rem 0;
+  }
+  .hero .container {
+    margin-left: auto;
+    margin-right: auto;
   }
   .hero .hero-text-intro {
     width: 40%;
