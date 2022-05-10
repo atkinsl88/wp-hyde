@@ -28,10 +28,15 @@
 
 <section class="sandbox container-fluid">
   <div class="sandbox-projects">
+    <div class="container">
+      <p>Ordered by language alphabetically...</p>
+    </div>
     <?php
     $sandboxPage = new WP_Query(array(
-      // 'posts_per_page' => 6,
       'post_type' => 'sandbox',
+      'meta_key' => 'sandbox_categories',
+      'orderby' => 'meta_value',
+      'order'	=> 'ASC'
     ));
     while($sandboxPage->have_posts()) {
       $sandboxPage->the_post(); ?>
